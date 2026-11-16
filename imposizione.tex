@@ -1,0 +1,7 @@
+% Impagina main.pdf (20 pagine A5) a libretto su fogli A4 orizzontali.
+% Compilare con:  xelatex imposizione.tex   (dopo aver generato main.pdf)
+\documentclass[a4paper]{article}
+\usepackage{pdfpages}
+\begin{document}
+\includepdf[pages=-,signature=20,landscape,paper=a4paper]{main.pdf}
+\end{document}

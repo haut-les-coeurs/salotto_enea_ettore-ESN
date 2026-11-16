@@ -1,0 +1,1145 @@
+This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.5) (preloaded format=xelatex 2026.11.14)  15 NOV 2026 15:05
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./main.tex
+(main.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-03-20>
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count271
+\c@section=\count272
+\c@subsection=\count273
+\c@subsubsection=\count274
+\c@paragraph=\count275
+\c@subparagraph=\count276
+\c@figure=\count277
+\c@table=\count278
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen150
+)
+(stile.tex
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2026/03/07 v6.0 Page Geometry
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+\Gm@cnth=\count279
+\Gm@cntv=\count280
+\c@Gm@tempcnt=\count281
+\Gm@bindingoffset=\dimen151
+\Gm@wd@mp=\dimen152
+\Gm@odd@mp=\dimen153
+\Gm@even@mp=\dimen154
+\Gm@layoutwidth=\dimen155
+\Gm@layoutheight=\dimen156
+\Gm@layouthoffset=\dimen157
+\Gm@layoutvoffset=\dimen158
+\Gm@dimlist=\toks18
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/polyglossia\polyglossia
+.sty
+Package: polyglossia 2026/09/11 v2.13 Modern multilingual typesetting with XeLa
+TeX and LuaLaTeX
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count282
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec.sty
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xpars
+e.sty
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2026-03-20 L3 programming layer (loader) 
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-xet
+ex.def
+File: l3backend-xetex.def 2026-02-18 L3 backend support: XeTeX
+\g__graphics_track_int=\count283
+\g__pdfannot_backend_int=\count284
+\g__pdfannot_backend_link_int=\count285
+))
+Package: xparse 2025-10-09 L3 Experimental document command parser
+)
+Package: fontspec 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec-xetex
+.sty
+Package: fontspec-xetex 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count286
+\l__fontspec_language_int=\count287
+\l__fontspec_strnum_int=\count288
+\l__fontspec_tmp_int=\count289
+\l__fontspec_tmpa_int=\count290
+\l__fontspec_tmpb_int=\count291
+\l__fontspec_tmpc_int=\count292
+\l__fontspec_em_int=\count293
+\l__fontspec_emdef_int=\count294
+\l__fontspec_strong_int=\count295
+\l__fontspec_strongdef_int=\count296
+\l__fontspec_tmpa_dim=\dimen159
+\l__fontspec_tmpb_dim=\dimen160
+\l__fontspec_tmpc_dim=\dimen161
+ (C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontspec.cfg))
+)
+\l_xpg_alias_keyvals_int=\count297
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/polyglossia\gloss-latex
+.ldf
+File: gloss-latex.ldf 2026/09/11 v2.13 polyglossia: module for default language
+
+))
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/polyglossia\gloss-itali
+an.ldf
+File: gloss-italian.ldf 2026/09/11 v2.13 polyglossia: module for Italian
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/polyglossia\babelsh.def
+File: babelsh.def 2022/06/21 Babel common definitions for shorthands
+ Taken verbatim from babel files (2022/06/06 v3.76)
+)
+Package babel Info: Making " an active character on input line 34.
+)
+
+Package polyglossia Info: Default language is italian
+
+ (C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 274.
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\xetex.def
+File: xetex.def 2025/11/01 v5.0p Graphics/color driver for xetex
+) (C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.lt
+x)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 106.
+)
+\Gin@req@height=\dimen162
+\Gin@req@width=\dimen163
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+Package: eso-pic 2026/05/31 v3.0e eso-pic (RN)
+\ESO@tempdima=\dimen164
+\ESO@tempdimb=\dimen165
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip51
+\enit@outerparindent=\dimen166
+\enit@toks=\toks19
+\enit@inbox=\box53
+\enit@count@id=\count298
+\enitdp@description=\count299
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
+Package: colortbl 2026/05/01 v1.0l Color table columns (DPC)
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+\col@sep=\dimen167
+\ar@mcellbox=\box54
+\extrarowheight=\dimen168
+\NC@list=\toks20
+\extratabsurround=\skip52
+\backup@length=\skip53
+\ar@cellbox=\box55
+)
+\everycr=\toks21
+\minrowclearance=\skip54
+\rownum=\count300
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+\TX@col@width=\dimen169
+\TX@old@table=\dimen170
+\TX@old@col=\dimen171
+\TX@target=\dimen172
+\TX@delta=\dimen173
+\TX@cols=\count301
+\TX@ftn=\toks22
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcolorbox.sty
+Package: tcolorbox 2025/11/28 version 6.9.0 text color boxes
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
+sty
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.st
+y
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-common.tex
+\pgfutil@everybye=\toks23
+\pgfutil@tempdima=\dimen174
+\pgfutil@tempdimb=\dimen175
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
+-latex.def
+\pgfutil@abb=\box56
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
+code.tex
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
+))
+Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.
+sty
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.
+sty
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s.code.tex
+Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex
+\pgfkeys@pathtoks=\toks24
+\pgfkeys@temptoks=\toks25
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+libraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks26
+))
+\pgf@x=\dimen176
+\pgf@y=\dimen177
+\pgf@xa=\dimen178
+\pgf@ya=\dimen179
+\pgf@xb=\dimen180
+\pgf@yb=\dimen181
+\pgf@xc=\dimen182
+\pgf@yc=\dimen183
+\pgf@xd=\dimen184
+\pgf@yd=\dimen185
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count302
+\c@pgf@countb=\count303
+\c@pgf@countc=\count304
+\c@pgf@countd=\count305
+\t@pgf@toka=\toks27
+\t@pgf@tokb=\toks28
+\t@pgf@tokc=\toks29
+\pgf@sys@id@count=\count306
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
+fg
+File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
+)
+Driver file for pgf: pgfsys-xetex.def
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-xetex.def
+File: pgfsys-xetex.def 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+s-common-pdf.def
+File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
+)
+\pgfsys@objnum=\count307
+)))
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+ssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfsyssoftpath@smallbuffer@items=\count308
+\pgfsyssoftpath@bigbuffer@items=\count309
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
+sprotocol.code.tex
+File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+e.code.tex
+Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.
+code.tex)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
+r.code.tex
+\pgfmath@dimen=\dimen186
+\pgfmath@count=\count310
+\pgfmath@box=\box57
+\pgfmath@toks=\toks30
+\pgfmath@stack@operand=\toks31
+\pgfmath@stack@operation=\toks32
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.code.tex)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.basic.code.tex)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.trigonometric.code.tex)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.random.code.tex)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.comparison.code.tex)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.base.code.tex)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.round.code.tex)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.misc.code.tex)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
+ions.integerarithmetics.code.tex)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.
+code.tex)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
+.code.tex
+\c@pgfmathroundto@lastzeros=\count311
+))
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
+tex)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epoints.code.tex
+File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@picminx=\dimen187
+\pgf@picmaxx=\dimen188
+\pgf@picminy=\dimen189
+\pgf@picmaxy=\dimen190
+\pgf@pathminx=\dimen191
+\pgf@pathmaxx=\dimen192
+\pgf@pathminy=\dimen193
+\pgf@pathmaxy=\dimen194
+\pgf@xx=\dimen195
+\pgf@xy=\dimen196
+\pgf@yx=\dimen197
+\pgf@yy=\dimen198
+\pgf@zx=\dimen199
+\pgf@zy=\dimen256
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@path@lastx=\dimen257
+\pgf@path@lasty=\dimen258
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathusage.code.tex
+File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@shorten@end@additional=\dimen259
+\pgf@shorten@start@additional=\dimen260
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+escopes.code.tex
+File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfpic=\box58
+\pgf@hbox=\box59
+\pgf@layerbox@main=\box60
+\pgf@picture@serial@count=\count312
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+egraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgflinewidth=\dimen261
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransformations.code.tex
+File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@pt@x=\dimen262
+\pgf@pt@y=\dimen263
+\pgf@pt@temp=\dimen264
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+equick.code.tex
+File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eobjects.code.tex
+File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+earrows.code.tex
+File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowsep=\dimen265
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eshade.code.tex
+File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@max=\dimen266
+\pgf@sys@shading@range@num=\count313
+\pgf@shadingcount=\count314
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eimage.code.tex
+File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+eexternal.code.tex
+File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfexternal@startupbox=\box61
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+elayers.code.tex
+File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+etransparency.code.tex
+File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+epatterns.code.tex
+File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
+erdf.code.tex
+File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+shapes.code.tex
+File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodeparttextbox=\box62
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+plot.code.tex
+File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-0-65.sty
+Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@nodesepstart=\dimen267
+\pgf@nodesepend=\dimen268
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
+mp-version-1-18.sty
+Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.st
+y
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.s
+ty
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
+.code.tex))
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
+.tex))
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
+code.tex
+Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
+\pgffor@iter=\dimen269
+\pgffor@skip=\dimen270
+\pgffor@stack=\toks33
+\pgffor@toks=\toks34
+))
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z\tikz.code.tex
+Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@plot@mark@count=\count315
+\pgfplotmarksize=\dimen271
+)
+\tikz@lastx=\dimen272
+\tikz@lasty=\dimen273
+\tikz@lastxsaved=\dimen274
+\tikz@lastysaved=\dimen275
+\tikz@lastmovetox=\dimen276
+\tikz@lastmovetoy=\dimen277
+\tikzleveldistance=\dimen278
+\tikzsiblingdistance=\dimen279
+\tikz@figbox=\box63
+\tikz@figbox@bg=\box64
+\tikz@tempbox=\box65
+\tikz@tempbox@bg=\box66
+\tikztreelevel=\count316
+\tikznumberofchildren=\count317
+\tikznumberofcurrentchild=\count318
+\tikz@fig@count=\count319
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
+matrix.code.tex
+File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfmatrixcurrentrow=\count320
+\pgfmatrixcurrentcolumn=\count321
+\pgf@matrix@numberofcolumns=\count322
+)
+\tikz@expandcount=\count323
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
+Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks35
+\verbatim@line=\toks36
+\verbatim@in@stream=\read3
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspaces.s
+ty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)
+\@envbody=\toks37
+)
+\tcb@titlebox=\box67
+\tcb@upperbox=\box68
+\tcb@lowerbox=\box69
+\tcb@phantombox=\box70
+\c@tcbbreakpart=\count324
+\c@tcblayer=\count325
+\c@tcolorbox@number=\count326
+\l__tcobox_tmpa_box=\box71
+\l__tcobox_tmpa_dim=\dimen280
+\tcb@temp=\box72
+\tcb@temp=\box73
+\tcb@temp=\box74
+\tcb@temp=\box75
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbraster.cod
+e.tex
+Library (tcolorbox): 'tcbraster.code.tex' version '6.9.0'
+\c@tcbrastercolumn=\count327
+\c@tcbrasterrow=\count328
+\c@tcbrasternum=\count329
+\c@tcbraster=\count330
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskins.code
+.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '6.9.0'
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzfill.image
+.sty
+Package: tikzfill.image 2026/04/23 v1.2.0 Image filling library for TikZ
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/tikzfill\tikzlibraryfil
+l.image.code.tex
+File: tikzlibraryfill.image.code.tex 2026/04/23 v1.2.0 Image filling library
+\l__tikzfill_tmpa_dim=\dimen281
+\l__tikzfill_tmpb_dim=\dimen282
+\l__tikzfill_img_box=\box76
+))
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbskinsjigsa
+w.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '6.9.0'
+))
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbbreakable.
+code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '6.9.0'
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/pdfcol\pdfcol.sty
+Package: pdfcol 2022-09-21 v1.7 Handle new color stacks for pdfTeX (HO)
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
+ty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdfcol Info: Interface disabled because of missing PDF mode of pdfTeX.
+)
+Package pdfcol Info: pdfTeX's color stacks are not available.
+\tcb@testbox=\box77
+\tcb@totalupperbox=\box78
+\tcb@totallowerbox=\box79
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbhooks.code
+.tex
+Library (tcolorbox): 'tcbhooks.code.tex' version '6.9.0'
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbtheorems.c
+ode.tex
+Library (tcolorbox): 'tcbtheorems.code.tex' version '6.9.0'
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip55
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks38
+\ex@=\dimen283
+))
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen284
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count331
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count332
+\leftroot@=\count333
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count334
+\DOTSCASE@=\count335
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box80
+\strutbox@=\box81
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen285
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count336
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count337
+\dotsspace@=\muskip17
+\c@parentequation=\count338
+\dspbrk@lvl=\count339
+\tag@help=\toks39
+\row@=\count340
+\column@=\count341
+\maxfields@=\count342
+\andhelp@=\toks40
+\eqnshift@=\dimen286
+\alignsep@=\dimen287
+\tagshift@=\dimen288
+\tagwidth@=\dimen289
+\totwidth@=\dimen290
+\lineht@=\dimen291
+\@envbody=\toks41
+\multlinegap=\skip56
+\multlinetaggap=\skip57
+\mathdisplay@stack=\toks42
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+))
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbfitting.co
+de.tex
+Library (tcolorbox): 'tcbfitting.code.tex' version '6.9.0'
+\tcbfitdim=\dimen292
+\tcb@lowerfitdim=\dimen293
+\tcb@upperfitdim=\dimen294
+\tcb@cur@hbadness=\count343
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistingsut
+f8.code.tex
+Library (tcolorbox): 'tcblistingsutf8.code.tex' version '6.9.0'
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistings.c
+ode.tex
+Library (tcolorbox): 'tcblistings.code.tex' version '6.9.0'
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count344
+\lst@gtempboxa=\box82
+\lst@token=\toks43
+\lst@length=\count345
+\lst@currlwidth=\dimen295
+\lst@column=\count346
+\lst@pos=\count347
+\lst@lostspace=\dimen296
+\lst@width=\dimen297
+\lst@newlines=\count348
+\lst@lineno=\count349
+\lst@maxwidth=\dimen298
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
+File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
+\c@lstnumber=\count350
+\lst@skipnumbers=\count351
+\lst@framebox=\box83
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2025/11/14 1.11b listings configuration
+))
+Package: listings 2025/11/14 1.11b (Carsten Heinz)
+==> First Aid for listings.sty no longer applied!
+    Expected:
+        2024/09/23 1.10c (Carsten Heinz)
+    but found:
+        2025/11/14 1.11b (Carsten Heinz)
+    so I'm assuming it got fixed.
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcblistingsco
+re.code.tex
+Library (tcolorbox): 'tcblistingscore.code.tex' version '6.9.0'
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbprocessing
+.code.tex
+Library (tcolorbox): 'tcbprocessing.code.tex' version '6.9.0'
+)
+\c@tcblisting=\count352
+))
+Package tcolorbox Info: Library `listingsutf8' is compatible with pdftex only. 
+Library `listings` is loaded instead. on input line 29.
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbexternal.c
+ode.tex
+Library (tcolorbox): 'tcbexternal.code.tex' version '6.9.0'
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbmagazine.c
+ode.tex
+Library (tcolorbox): 'tcbmagazine.code.tex' version '6.9.0'
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbvignette.c
+ode.tex
+Library (tcolorbox): 'tcbvignette.code.tex' version '6.9.0'
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
+aryfadings.code.tex
+File: pgflibraryfadings.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbposter.cod
+e.tex
+Library (tcolorbox): 'tcbposter.code.tex' version '6.9.0'
+))
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
+z/libraries\tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\
+pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.sty
+Package: microtype 2026/03/01 v3.2d Micro-typographical refinements (RS)
+\MT@toks=\toks44
+\MT@tempbox=\box84
+\MT@count=\count353
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1084.
+LaTeX Info: Redefining \leftprotrusion on input line 1085.
+\MT@prot@toks=\toks45
+LaTeX Info: Redefining \rightprotrusion on input line 1104.
+LaTeX Info: Redefining \textls on input line 1449.
+\MT@outer@kern=\dimen299
+LaTeX Info: Redefining \microtypecontext on input line 2053.
+LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
+\MT@listname@count=\count354
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype-xet
+ex.def
+File: microtype-xetex.def 2026/03/01 v3.2d Definitions specific to xetex (RS)
+LaTeX Info: Redefining \lsstyle on input line 443.
+LaTeX Info: Redefining \lslig on input line 451.
+\MT@outer@space=\skip58
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.cfg
+File: microtype.cfg 2026/03/01 v3.2d microtype main configuration file (RS)
+)
+LaTeX Info: Redefining \microtypesetup on input line 3065.
+)
+
+Package fontspec Info: 
+(fontspec)             Font family 'JosefinSans(0)' created for font
+(fontspec)             'JosefinSans' with options
+(fontspec)             [Ligatures=TeX,Path=./fonts/,Extension=.ttf,UprightFont=
+*-Regular,BoldFont=*-Bold,ItalicFont=*-Italic,BoldItalicFont=*-BoldItalic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[./fonts/JosefinSans-Regular.ttf]/OT:script=latn;lan
+guage=dflt;mapping=tex-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[./fonts/JosefinSans-Bold.ttf]/OT:script=latn;langua
+ge=dflt;mapping=tex-text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"[./fonts/JosefinSans-Italic.ttf]/OT:script=latn;lang
+uage=dflt;mapping=tex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"[./fonts/JosefinSans-BoldItalic.ttf]/OT:script=latn;
+language=dflt;mapping=tex-text;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'PoiretOne-Regular.ttf(0)' created for font
+(fontspec)             'PoiretOne-Regular.ttf' with options [Path=./fonts/].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[./fonts/PoiretOne-Regular.ttf]/OT:script=latn;langu
+age=dflt;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'PoiretOne-Regular.ttf(1)' created for font
+(fontspec)             'PoiretOne-Regular.ttf' with options
+(fontspec)             [Path=./fonts/,AutoFakeBold=3].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[./fonts/PoiretOne-Regular.ttf]/OT:script=latn;langu
+age=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[./fonts/PoiretOne-Regular.ttf]/OT:script=latn;langu
+age=dflt;embolden=3;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'DejaVuSans.ttf(0)' created for font
+(fontspec)             'DejaVuSans.ttf' with options
+(fontspec)             [Path=./fonts/,BoldFont=DejaVuSans-Bold.ttf].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[./fonts/DejaVuSans.ttf]/OT:script=latn;language=dfl
+t;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"[./fonts/DejaVuSans-Bold.ttf]/OT:script=latn;languag
+e=dflt;"
+
+) (main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: custom
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(39.83385pt, 341.43309pt, 39.83385pt)
+* v-part:(T,H,B)=(36.98857pt, 509.30435pt, 51.21495pt)
+* \paperwidth=421.10078pt
+* \paperheight=597.50787pt
+* \textwidth=341.43309pt
+* \textheight=509.30435pt
+* \oddsidemargin=-32.43614pt
+* \evensidemargin=-32.43614pt
+* \topmargin=-72.28142pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+Package fontspec Info: 
+(fontspec)             Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 10.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 10.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 10.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 10.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 10.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 10.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 10.
+LaTeX Font Info:    Redeclaring math accent \check on input line 10.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 10.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 10.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 10.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 10.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 10.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 10.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 10.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 10.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 10.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 10.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 10.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 10.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 10.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 10.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 10.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 10.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 10.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/JosefinSans(0)/m/n on input line 10.
+
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 10.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/JosefinSans(0)/m/n on input line 10
+.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/JosefinSans(0)/m/n --> TU/JosefinSans(0)/m/n on inpu
+t line 10.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/JosefinSans(0)/m/it on input line 1
+0.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/JosefinSans(0)/b/n on input line 10
+.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 10.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 10.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/JosefinSans(0)/m/n --> TU/JosefinSans(0)/b/n on inpu
+t line 10.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/JosefinSans(0)/b/it on input line 
+10.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 10.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 10.
+\c@lstlisting=\count355
+LaTeX Info: Redefining \microtypecontext on input line 10.
+Package microtype Info: Applying patch `item' on input line 10.
+Package microtype Info: Applying patch `toc' on input line 10.
+Package microtype Info: Applying patch `eqnum' on input line 10.
+Package microtype Info: Applying patch `footnote' on input line 10.
+Package microtype Info: Applying patch `verbatim' on input line 10.
+LaTeX Info: Redefining \microtypesetup on input line 10.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `JosefinSans' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `PoiretOne-Regular.ttf' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `DejaVuSans.ttf' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+File: img/cover_bg.png Graphic file (type bmp)
+<img/cover_bg.png>
+[1
+
+]
+File: img/duo.png Graphic file (type bmp)
+<img/duo.png>
+ [2
+
+]
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg)
+Overfull \hbox (2.89688pt too wide) in paragraph at lines 82--82
+ []|\TU/PoiretOne-Regular.ttf(1)/b/n/9 GIOCATORI[]| 
+ []
+
+
+Underfull \hbox (badness 1052) in paragraph at lines 82--82
+\TU/JosefinSans(0)/m/it/8 Quattro amici, una Donna di Picche da
+ []
+
+File: img/enea.png Graphic file (type bmp)
+<img/enea.png>
+LaTeX Font Info:    Calculating math sizes for size <8.9> on input line 93.
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.45> not available
+(Font)              size <5> substituted on input line 93.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.45> not available
+(Font)              size <5> substituted on input line 93.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.45> not available
+(Font)              size <5> substituted on input line 93.
+
+[3
+
+]
+File: img/ettore.png Graphic file (type bmp)
+<img/ettore.png>
+ [4
+
+]
+File: img/enea.png Graphic file (type bmp)
+<img/enea.png>
+ [5
+
+]
+File: img/ettore.png Graphic file (type bmp)
+<img/ettore.png>
+ [6
+
+]
+File: img/enea.png Graphic file (type bmp)
+<img/enea.png>
+ [7
+
+]
+File: img/enea.png Graphic file (type bmp)
+<img/enea.png>
+ [8
+
+] [9
+
+]
+File: img/ettore.png Graphic file (type bmp)
+<img/ettore.png>
+ [10
+
+]
+File: img/ettore.png Graphic file (type bmp)
+<img/ettore.png>
+ [11
+
+]
+
+LaTeX Font Warning: Font shape `TU/PoiretOne-Regular.ttf(1)/b/it' undefined
+(Font)              using `TU/PoiretOne-Regular.ttf(1)/b/n' instead on input li
+ne 352.
+
+[12
+
+]
+File: img/ettore.png Graphic file (type bmp)
+<img/ettore.png>
+ [13
+
+]
+File: img/enea.png Graphic file (type bmp)
+<img/enea.png>
+ [14
+
+] [15
+
+]
+File: img/ettore.png Graphic file (type bmp)
+<img/ettore.png>
+ [16
+
+]
+Missing character: There is no ★ in font [./fonts/PoiretOne-Regular.ttf]/OT:scr
+ipt=latn;language=dflt;embolden=3;!
+File: img/ettore.png Graphic file (type bmp)
+<img/ettore.png>
+Missing character: There is no ★ in font [./fonts/JosefinSans-Bold.ttf]/OT:scri
+pt=latn;language=dflt;mapping=tex-text;!
+[17
+
+]
+File: img/enea.png Graphic file (type bmp)
+<img/enea.png>
+ [18
+
+] [19
+
+]
+File: img/ventanni.png Graphic file (type bmp)
+<img/ventanni.png>
+ [20
+
+] (main.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-03-20>
+ ***********
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.55pt have occurred.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 26291 strings out of 402807
+ 601841 string characters out of 5445134
+ 1309022 words of memory out of 5000000
+ 54757 multiletter control sequences out of 15000+600000
+ 633057 words of font info for 118 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 103i,12n,111p,1003b,927s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on main.pdf (20 pages).

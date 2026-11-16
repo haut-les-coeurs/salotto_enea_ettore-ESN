@@ -1,0 +1,220 @@
+%% ============================================================
+%%  STILE GRAFICO – "Fate il vostro gioco"
+%%  Tutto ciò che riguarda aspetto, colori, font, carte e riquadri.
+%%  Per cambiare la grafica basta toccare questo file.
+%% ============================================================
+
+% ---------- Pagina ----------
+\usepackage[paperwidth=148mm,paperheight=210mm,
+            left=14mm,right=14mm,top=13mm,bottom=18mm]{geometry}
+\usepackage{polyglossia}
+\setdefaultlanguage{italian}
+\usepackage{fontspec}
+\usepackage{xcolor,graphicx,eso-pic,enumitem,colortbl,tabularx,array}
+\usepackage[most]{tcolorbox}
+\usepackage{tikz}
+\usetikzlibrary{calc,shapes.geometric}
+\usepackage{microtype}
+\frenchspacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1.2mm}
+\setlength{\emergencystretch}{3em}
+\pagestyle{empty}
+
+% ---------- Colori (presi dalla mail e dalle grafiche ESN MoRe) ----------
+\definecolor{ink}{HTML}{0D0D0B}
+\definecolor{gold}{HTML}{C9953F}
+\definecolor{golddk}{HTML}{9A6B1C}
+\definecolor{cream}{HTML}{EFE3CC}
+\definecolor{paper}{HTML}{F7F0DF}
+\definecolor{tint}{HTML}{EFE0BD}
+\definecolor{rosepig}{HTML}{E8A9B5}
+\definecolor{rose}{HTML}{B8607A}
+\definecolor{bluepig}{HTML}{8DB3C6}
+\definecolor{teal}{HTML}{10262B}
+\definecolor{cardred}{HTML}{B3202A}
+\definecolor{txt}{HTML}{2A2418}
+
+% ---------- Font (nella cartella fonts/) ----------
+\setmainfont{JosefinSans}[Path=./fonts/,Extension=.ttf,
+  UprightFont=*-Regular,BoldFont=*-Bold,ItalicFont=*-Italic,BoldItalicFont=*-BoldItalic]
+\newfontfamily\deco{PoiretOne-Regular.ttf}[Path=./fonts/]
+\newfontfamily\decob{PoiretOne-Regular.ttf}[Path=./fonts/,AutoFakeBold=3]
+\newfontfamily\suitfont{DejaVuSans.ttf}[Path=./fonts/,BoldFont=DejaVuSans-Bold.ttf]
+\newcommand{\corpo}{\fontsize{8.9}{12.2}\selectfont\color{txt}}
+
+% ---------- Sfondi di pagina ----------
+\gdef\pagetype{cream}
+\newcommand{\startpage}[1][cream]{\clearpage\gdef\pagetype{#1}}
+
+\newcommand{\decoframe}[4]{% inset, smusso, colore, spessore
+ \draw[#3,line width=#4] (#1+#2,#1) -- (\paperwidth-#1-#2,#1) -- (\paperwidth-#1,#1+#2)
+   -- (\paperwidth-#1,\paperheight-#1-#2) -- (\paperwidth-#1-#2,\paperheight-#1)
+   -- (#1+#2,\paperheight-#1) -- (#1,\paperheight-#1-#2) -- (#1,#1+#2) -- cycle;}
+\newcommand{\cornerfan}[4]{% x,y,rotazione,colore
+ \begin{scope}[shift={(#1,#2)},rotate=#3]
+  \foreach \a in {0,15,...,90}{\draw[#4,line width=.3pt] (0,0) -- (\a:8mm);}
+  \draw[#4,line width=.3pt] (8mm,0) arc(0:90:8mm);
+  \draw[#4,line width=.3pt] (5mm,0) arc(0:90:5mm);
+ \end{scope}}
+\newcommand{\framecorners}[2]{%
+ \cornerfan{#1}{#1}{0}{#2}
+ \cornerfan{\paperwidth-#1}{#1}{90}{#2}
+ \cornerfan{\paperwidth-#1}{\paperheight-#1}{180}{#2}
+ \cornerfan{#1}{\paperheight-#1}{270}{#2}}
+
+\newcommand{\bgcream}{%
+ \begin{tikzpicture}
+  \useasboundingbox (0,0) rectangle (\paperwidth,\paperheight);
+  \fill[paper] (0,0) rectangle (\paperwidth,\paperheight);
+  \decoframe{6mm}{3.5mm}{gold}{.7pt}
+  \decoframe{7.6mm}{3.5mm}{gold}{.3pt}
+  \framecorners{6mm}{gold}
+  % numero di pagina in un rombo
+  \node[diamond,draw=gold,fill=ink,line width=.5pt,inner sep=1.1pt,
+        text=cream,font=\decob\bfseries\small] at (\paperwidth/2,10.5mm) {\thepage};
+  \draw[gold,line width=.4pt] (\paperwidth/2-18mm,10.5mm) -- (\paperwidth/2-5.5mm,10.5mm);
+  \draw[gold,line width=.4pt] (\paperwidth/2+5.5mm,10.5mm) -- (\paperwidth/2+18mm,10.5mm);
+ \end{tikzpicture}}
+\newcommand{\bgdark}{%
+ \begin{tikzpicture}
+  \useasboundingbox (0,0) rectangle (\paperwidth,\paperheight);
+  \fill[black] (0,0) rectangle (\paperwidth,\paperheight);
+  \decoframe{6mm}{3.5mm}{gold}{.8pt}
+  \decoframe{7.8mm}{3.5mm}{gold}{.3pt}
+  \framecorners{6mm}{gold}
+ \end{tikzpicture}}
+\newcommand{\bgcover}{%
+ \includegraphics[width=\paperwidth,height=\paperheight]{img/cover_bg.png}%
+ \begin{tikzpicture}[overlay]
+  \useasboundingbox (0,0) rectangle (\paperwidth,\paperheight);
+  \decoframe{6mm}{3.5mm}{gold}{.8pt}
+  \decoframe{7.8mm}{3.5mm}{gold}{.3pt}
+  \framecorners{6mm}{gold}
+ \end{tikzpicture}}
+\AddToShipoutPictureBG{\AtPageLowerLeft{%
+  \csname bg\pagetype\endcsname}}
+
+% ---------- Intestazione di gioco (fascia scura a tutta pagina) ----------
+\newcommand{\diffd}[1]{{\suitfont\color{gold}\foreach \k in {1,...,5}{\ifnum\k>#1 ◇\else ◆\fi}}}
+\newcommand{\gameheader}[7]{% num, TITOLO, sottotitolo, giocatori, durata, difficoltà, mascotte
+\begin{tikzpicture}[remember picture,overlay]
+ \fill[ink] (current page.north west) rectangle ([yshift=-47mm]current page.north east);
+ \draw[gold,line width=.7pt] ([yshift=-44.5mm]current page.north west) -- ([yshift=-44.5mm]current page.north east);
+ \draw[gold,line width=.3pt] ([yshift=-46mm]current page.north west) -- ([yshift=-46mm]current page.north east);
+ \begin{scope}[shift={(current page.north west)}]
+  \cornerfan{0}{0}{270}{gold!55!ink}
+ \end{scope}
+ \begin{scope}[shift={(current page.north east)}]
+  \cornerfan{0}{0}{180}{gold!55!ink}
+ \end{scope}
+ \node[anchor=north west,text=gold,font=\decob\bfseries\footnotesize,inner sep=0] at ([xshift=14mm,yshift=-7mm]current page.north west)
+   {\MakeUppercase{N°}~#1\ \raisebox{.1ex}{\suitfont\tiny ◆}\ \MakeUppercase{#4}};
+ \node[anchor=north west,text=gold,font=\decob\bfseries\fontsize{30}{32}\selectfont,inner sep=0] at ([xshift=14mm,yshift=-11mm]current page.north west)
+   {#2};
+ \node[anchor=north west,text=cream,font=\itshape\small,inner sep=0] at ([xshift=14mm,yshift=-22mm]current page.north west)
+   {#3};
+ \node[anchor=north west,text=cream,font=\footnotesize,inner sep=0,align=left] at ([xshift=14mm,yshift=-29.5mm]current page.north west)
+   {{\decob\bfseries\color{gold}DURATA}\quad #5\\[1.2mm]{\decob\bfseries\color{gold}DIFFICOLTÀ}\quad \diffd{#6}};
+ \node[circle,fill=ink,inner sep=0] at ([xshift=-26mm,yshift=-33mm]current page.north east)
+   {\includegraphics[width=32mm]{img/#7.png}};
+\end{tikzpicture}\vspace*{37mm}\par\nopagebreak}
+
+% ---------- Titoli di sezione ----------
+\newcommand{\secz}[1]{\par\nobreak\vspace{1.2mm}%
+ {\noindent\decob\bfseries\fontsize{12.5}{14}\selectfont\color{ink}\MakeUppercase{#1}\hspace{2mm}%
+  {\color{gold}\leaders\hrule height .5pt\hfill}\kern0pt\par}\nobreak\vspace{.4mm}}
+\newcommand{\bigtitle}[2]{%
+ \begin{center}{\decob\bfseries\fontsize{23}{26}\selectfont\color{ink}\MakeUppercase{#1}}\\[1mm]
+ {\itshape\small\color{golddk}#2}\end{center}}
+\newcommand{\divider}{\par\vspace{1mm}\noindent\begin{center}\begin{tikzpicture}
+  \draw[gold,line width=.4pt] (-24mm,0) -- (-3mm,0); \draw[gold,line width=.4pt] (3mm,0) -- (24mm,0);
+  \node[diamond,fill=gold,inner sep=1.2pt] at (0,0) {};
+ \end{tikzpicture}\end{center}\par\vspace{.5mm}}
+
+% ---------- Elenchi ----------
+\setlist{nosep}
+\setlist[enumerate]{label=\textcolor{golddk}{\decob\bfseries\arabic*}\,,leftmargin=5.2mm,itemsep=1mm,topsep=.8mm,parsep=0pt}
+\setlist[itemize]{label=\raisebox{.2ex}{\textcolor{gold}{\suitfont\scriptsize ◆}},leftmargin=4.6mm,itemsep=.7mm,topsep=.8mm,parsep=0pt}
+\setlist[itemize,2]{label=\textcolor{gold}{–},leftmargin=4mm,itemsep=.3mm,topsep=.3mm}
+
+% ---------- Riquadri ----------
+\newtcolorbox{callout}[1][]{enhanced,breakable=false,colback=tint,colframe=tint,boxrule=0pt,arc=0pt,
+  left=3.6mm,right=2.6mm,top=1.5mm,bottom=1.5mm,borderline west={1.8pt}{0pt}{gold},
+  before skip=2mm,after skip=2mm,fontupper=\footnotesize\color{txt},#1}
+\newcommand{\tipbox}[2]{% chi = enea | ettore
+ \begin{tcolorbox}[enhanced,breakable=false,colback=ink,colframe=gold,boxrule=.6pt,arc=2mm,
+   left=2mm,right=2.4mm,top=1.2mm,bottom=1.2mm,before skip=1.6mm,after skip=1mm,coltext=cream]
+ \begin{minipage}[c]{12mm}\includegraphics[width=11.5mm]{img/#1.png}\end{minipage}\hfill
+ \begin{minipage}[c]{\dimexpr\linewidth-14.5mm\relax}\footnotesize #2\end{minipage}
+ \end{tcolorbox}}
+\newcommand{\tipname}[1]{\textcolor{gold}{\decob\bfseries\large #1}\\[.4mm]}
+\newcommand{\enea}[1]{\tipbox{enea}{\tipname{\textcolor{rosepig}{Il consiglio di Enea}}#1}}
+\newcommand{\ettore}[1]{\tipbox{ettore}{\tipname{\textcolor{bluepig}{Il trucco di Ettore}}#1}}
+\newcommand{\termine}[1]{\textbf{#1}}
+
+% ---------- Carte da gioco in TikZ ----------
+\makeatletter
+\def\suit@S{♠}\def\suit@C{♣}\def\suit@H{♥}\def\suit@D{♦}\def\suit@Z{★}
+\def\scol@S{ink}\def\scol@C{ink}\def\scol@H{cardred}\def\scol@D{cardred}\def\scol@Z{rose}
+\def\x@back{X}
+\newcommand{\cw}{11mm}\newcommand{\cpitch}{9.2mm}
+% \cardnode{valore}{seme}{x}{modo}  modo: n normale, u evidenziata (sollevata), d scartata (sbiadita)
+\newcommand{\cardnode}[4]{%
+	\edef\c@rank{#1}\expandafter\let\expandafter\c@suit\csname suit@#2\endcsname
+	\expandafter\let\expandafter\c@col\csname scol@#2\endcsname
+	\edef\c@mode{#4}\def\c@u{u}\def\c@d{d}%
+	\begin{scope}[shift={(#3,0)}]
+		\ifx\c@mode\c@u\begin{scope}[yshift=2.6mm]\fi
+			\ifx\c@rank\x@back
+			\draw[fill=ink,draw=gold,line width=.5pt,rounded corners=.9mm] (0,0) rectangle (\cw,{1.4*\cw});
+			\draw[gold,line width=.3pt,rounded corners=.4mm] (1.2mm,1.2mm) rectangle ({\cw-1.2mm},{1.4*\cw-1.2mm});
+			\foreach \a in {20,50,...,160}{\draw[gold,line width=.3pt] ({.5*\cw},{.45*\cw}) -- +(\a:6mm);}
+			\node[diamond,fill=gold,inner sep=1.4pt] at ({.5*\cw},{.7*\cw}) {};
+			\else
+			\draw[fill=white,draw=ink!65,line width=.3pt,rounded corners=.9mm] (0,0) rectangle (\cw,{1.4*\cw});
+			\ifx\c@u\c@mode\draw[gold,line width=1.1pt,rounded corners=.9mm] (0,0) rectangle (\cw,{1.4*\cw});\fi
+			\def\c@z{Z}\edef\c@s{#2}
+			\ifx\c@s\c@z
+			\node at ({.5*\cw},{.7*\cw}) {\suitfont\fontsize{20}{20}\selectfont\color{\c@col}\c@suit};
+			\node[anchor=north west,inner sep=0] at (1mm,{1.4*\cw-.5mm}) {\fontsize{5.2}{5.2}\selectfont\bfseries\color{rose}JOLLY};
+			\else
+			% --- Angolo in alto a sinistra ---
+			\node[anchor=north,inner sep=0] at (1.9mm,{1.4*\cw-.6mm}) 
+			{\fontsize{9}{9}\selectfont\bfseries\color{\c@col}\c@rank};
+			\node[anchor=north,inner sep=0] at (1.9mm,{1.4*\cw-3.5mm}) 
+			{\suitfont\fontsize{6.5}{6.5}\selectfont\color{\c@col}\c@suit};
+			
+			% --- Angolo in basso a destra ---
+			\node[anchor=north,inner sep=0,rotate=180] at ({\cw-1.9mm},.6mm) 
+			{\fontsize{9}{9}\selectfont\bfseries\color{\c@col}\c@rank};
+			\node[anchor=north,inner sep=0,rotate=180] at ({\cw-1.9mm},{3.5mm}) 
+			{\suitfont\fontsize{6.5}{6.5}\selectfont\color{\c@col}\c@suit};
+			
+			% --- Simbolo o Figura centrale (pulita) ---
+			\def\c@J{J}\def\c@Q{Q}\def\c@K{K}
+			\ifx\c@rank\c@J\def\c@face{1}\else\ifx\c@rank\c@Q\def\c@face{1}\else\ifx\c@rank\c@K\def\c@face{1}\else\def\c@face{0}\fi\fi\fi
+			\if\c@face1
+			\node at ({.5*\cw},{.7*\cw}) {\bfseries\fontsize{15}{15}\selectfont\color{\c@col}\c@rank};
+			\else
+			\node at ({.5*\cw},{.7*\cw}) {\suitfont\fontsize{16}{16}\selectfont\color{\c@col}\c@suit};
+			\fi
+			\fi
+			\fi
+			\ifx\c@mode\c@d\fill[cream,opacity=.68,rounded corners=.9mm] (0,0) rectangle (\cw,{1.4*\cw});\fi
+			\ifx\c@mode\c@u\end{scope}\fi
+\end{scope}}
+\makeatother
+% \hand{V/S,V/S,...}  oppure  \handm{V/S/m,...}
+\newcommand{\hand}[1]{\begin{tikzpicture}[baseline=0pt]
+ \foreach \r/\s [count=\i from 0] in {#1}{\cardnode{\r}{\s}{\i*\cpitch}{n}}
+ \end{tikzpicture}}
+\newcommand{\handm}[1]{\begin{tikzpicture}[baseline=0pt]
+ \foreach \r/\s/\m [count=\i from 0] in {#1}{\cardnode{\r}{\s}{\i*\cpitch}{\m}}
+ \end{tikzpicture}}
+% versione ridotta: \hands{scala}{lista}
+\newcommand{\handsc}[2]{\scalebox{#1}{\hand{#2}}}
+\newcommand{\sS}{{\suitfont ♠}}\newcommand{\sC}{{\suitfont ♣}}
+\newcommand{\sH}{{\suitfont\color{cardred}♥}}\newcommand{\sD}{{\suitfont\color{cardred}♦}}
+\newcommand{\fiche}{\tikz[baseline=-.6ex]{\draw[fill=gold,draw=ink,line width=.4pt] (0,0) circle (1.6mm);\draw[ink,line width=.3pt,dash pattern=on .6mm off .5mm] (0,0) circle (1.05mm);}}
+\newcommand{\ruleh}{\par\vspace{.5mm}}
