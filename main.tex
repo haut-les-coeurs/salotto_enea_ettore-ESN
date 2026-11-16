@@ -1,9 +1,9 @@
 % !TEX program = xelatex
 %% ============================================================
-%%  FATE IL VOSTRO GIOCO – Piccolo manuale di carte per una notte ruggente
+%%  IL SALOTTO DI ENEA ED ETTORE – Piccolo manuale di carte per una notte ruggente
 %%  ESN Modena e Reggio Emilia · 20 anni · Gala Anni '20
 %%  Compilare con XeLaTeX (2 passate):   xelatex main.tex
-%%  Formato: A5, 20 pagine. Per la stampa a libretto vedi README.
+%%  Formato: A5, 24 pagine. Per la stampa a libretto vedi LEGGIMI.txt.
 %% ============================================================
 \documentclass[10pt]{article}
 \input{stile}
@@ -17,7 +17,7 @@
 \thispagestyle{empty}
 \begin{tikzpicture}[remember picture,overlay]
 	\node[text=gold,font=\deco\fontsize{8.5}{10}\selectfont,align=center] at ([yshift=-15mm]current page.north)
-	{20 ANNI DI ESN MORE\quad{\suitfont\tiny ◆}\quad GALA ANNI ’20};
+	{20 ANNI DI ESN MORE\quad\headmid[.32mm]{\headerdiamond}\quad GALA ANNI ’20};
 	\draw[gold,line width=.4pt] ([xshift=-30mm,yshift=-20mm]current page.north) -- ([xshift=-3mm,yshift=-20mm]current page.north);
 	\draw[gold,line width=.4pt] ([xshift=3mm,yshift=-20mm]current page.north) -- ([xshift=30mm,yshift=-20mm]current page.north);
 	\node[diamond,fill=gold,inner sep=1.3pt] at ([yshift=-20mm]current page.north) {};
@@ -25,63 +25,66 @@
 	\node[text=gold,font=\decob\bfseries\fontsize{38}{40}\selectfont] at ([yshift=-51mm]current page.north) {ENEA ED ETTORE};
 	\node[text=cream,font=\itshape\fontsize{10.5}{13}\selectfont,align=center] at ([yshift=-64mm]current page.north)
 	{Il piccolo manuale di carte\\per una notte ruggente};
-	\node[text=gold,font=\deco\fontsize{7.5}{9}\selectfont,align=center,fill=ink,inner sep=1.5mm,rounded corners=1mm]
+	\node[text=gold,font=\deco\fontsize{7.5}{9}\selectfont,align=center,draw=gold,line width=.4pt,
+	      inner xsep=2.5mm,inner ysep=1.4mm,rounded corners=1mm]
 	at ([yshift=-76mm]current page.north)
-	{SEI GIOCHI\quad{\suitfont\tiny ◆}\quad NESSUNA ESPERIENZA RICHIESTA\quad{\suitfont\tiny ◆}\quad 21 NOVEMBRE 2026};
+	{SEI GIOCHI\quad\headmid[.32mm]{\headerdiamond}\quad NESSUNA ESPERIENZA RICHIESTA\quad\headmid[.32mm]{\headerdiamond}\quad 21 NOVEMBRE 2026};
 \end{tikzpicture}
 
-%% ------------------------------------------------------------
+
 %% 2 · BENVENUTI
-%% ------------------------------------------------------------
 \startpage
-\begin{center}\vspace*{-1mm}\includegraphics[width=36mm]{img/duo.png}\end{center}
+\begin{center}\vspace*{-1mm}\includegraphics[width=34mm]{img/duo.png}\end{center}
 \vspace{-3mm}
 \bigtitle{Benvenuti nel salotto}{Enea ed Ettore vi fanno gli onori di casa}
-Gli anni Venti sono stati il decennio delle luci soffuse, dei velluti, delle piume e del jazz — e delle lunghe partite a carte, nei salotti dell’alta società come negli speakeasy.
-
-Stasera tocca a voi. Il mazzo che avete tra le mani è il vostro biglietto d’ingresso, e questo libretto è la vostra guida: \textbf{sei giochi} spiegati passo dopo passo, dal più semplice al più astuto. Non serve esperienza: bastano un tavolo, qualche amico e un pizzico di sfrontatezza.
+Luci soffuse, velluti, piume e jazz: stasera il salotto si veste da anni Venti. Il mazzo è il vostro biglietto d’ingresso e questo libretto è la guida: \textbf{sei giochi}, spiegati passo dopo passo. Non serve esperienza: bastano un tavolo, qualche amico e un pizzico di sfrontatezza.
 
 \secz{Come si usa}
 \begin{itemize}
- \item I giochi sono in \textbf{ordine di difficoltà}: cominciate dal primo e salite quando vi sentite pronti.
- \item Ogni gioco ha la sua scheda: durata e difficoltà ({\suitfont\color{gold}◆} = facilissimo, 5 = da campioni).
+ \item Cominciate dai \textbf{cinque giochi in ordine di difficoltà}; in fondo trovate un \textbf{bonus} da giocare con due mazzi.
+ \item Ogni scheda indica giocatori, durata orientativa e difficoltà: da \textbf{1 a 5 rombi pieni}, dal più facile al più impegnativo.
  \item Nei riquadri scuri, \textbf{Enea} ed \textbf{Ettore} svelano consigli e trucchi.
- \item Si gioca \textbf{solo per gloria}: niente soldi, solo fiches. 
 \end{itemize}
+\begin{callout}
+\textbf{Le regole della serata.} Qui trovate versioni semplificate: alcune regole possono differire da quelle che conoscete. Seguite la stessa scheda per tutta la partita. Si gioca \textbf{solo per gloria}: niente soldi!
+\end{callout}
 
 \secz{Cosa vi serve}
 \begin{itemize}
- \item Il mazzo da \textbf{52 carte} (togliete i jolly: servono solo nel gioco bonus).
- \item Una ventina di \textbf{fiches} a testa — o un sostituto di fantasia.
- \item Carta e penna per i punti (a pagina 19 c’è un \textbf{segnapunti}).
- \item Per il gioco \textbf{bonus}: un secondo mazzo. Chiedetelo a un altro tavolo e fate amicizia!
+ \item Un mazzo da \textbf{52 carte}; togliete i jolly, che servono solo nel bonus.
+ \item Le \textbf{fiches}: gettoni senza valore in denaro per contare puntate e vincite. Si riparte dalla dotazione di ogni scheda quando si cambia gioco; tenete una riserva per il Ventuno.
+ \item Carta e penna: i \textbf{segnapunti} sono alle pagine \pageref{segnapunti}–\pageref{segnapunti-6}; segue una pagina per gli appunti.
+ \item Per il \textbf{Ramino}: un secondo mazzo con i jolly. Chiedetelo a un altro tavolo e fate amicizia!
 \end{itemize}
-\vspace{1mm}
+\vfill
 \begin{center}\itshape\small\color{golddk}Mettete la maschera e lucidate il bastone da passeggio: si gioca.\end{center}
 
-%% ------------------------------------------------------------
 %% 3 · PROGRAMMA
-%% ------------------------------------------------------------
 \startpage
-\bigtitle{Il programma della serata}{sei giochi, in ordine di difficoltà}
+\bigtitle{Il programma della serata}{cinque giochi in crescendo, più un bonus}
 \divider
-\renewcommand{\arraystretch}{1.0}
-\arrayrulecolor{gold}
-\small
-
-\begin{tabularx}{\linewidth}{@{}>{\centering\arraybackslash}p{6mm}X>{\centering\arraybackslash}p{15mm}>{\centering\arraybackslash}p{19mm}>{\centering\arraybackslash}p{8mm}@{}}
-	\hline
-	\rule{0pt}{5mm}{\decob\bfseries\color{golddk}N°} & {\decob\bfseries\color{golddk}GIOCO} & {\decob\bfseries\color{golddk}GIOCATORI} & {\decob\bfseries\color{golddk}DIFFICOLTÀ} & {\decob\bfseries\color{golddk}PAG.}\\[1mm]
-	\hline
-	\rule{0pt}{9.2mm}1 & \textbf{Acey Deucey}\newline{\footnotesize\itshape Una scommessa, tre carte, nervi saldi} & 3–8 & \diffd1 & 5\\[1.5mm] \hline
-	\rule{0pt}{9.2mm}2 & \textbf{Ventuno (Blackjack)}\newline{\footnotesize\itshape Battere il banco senza sballare} & 2–8 & \diffd1 & 6\\[1.5mm] \hline
-	\rule{0pt}{9.2mm}3 & \textbf{Poker a 5 carte}\newline{\footnotesize\itshape Il re degli speakeasy: bluffare è lecito} & 2–6 & \diffd2 & 8\\[1.5mm] \hline
-	\rule{0pt}{9.2mm}4 & \textbf{Gin Rummy}\newline{\footnotesize\itshape Un duello elegante tra due giocatori} & 2 & \diffd3 & 11\\[1.5mm] \hline
-	\rule{0pt}{9.2mm}5 & \textbf{Cuori (Hearts)}\newline{\footnotesize\itshape Quattro amici, una Donna di Picche da evitare} & 4 (o 3) & \diffd3 & 14\\[1.5mm] \hline
-	\rule{0pt}{9.2mm}{\suitfont\color{gold}★} & \textbf{BONUS · Ramino}\newline{\footnotesize\itshape Per chi ha due mazzi e un amico con cui giocare} & 2–5 & \diffd2 & 17\\[1.5mm] \hline
-\end{tabularx}
-\normalsize\corpo
-
+\begin{center}
+\begin{tikzpicture}[x=1mm,y=1mm]
+\draw[gold,line width=.5pt] (.2,4)--(119.8,4) (.2,-4)--(119.8,-4);
+\foreach \x/\t in {3/N°,33.9/GIOCO,70.8/GIOCATORI,93.7/DIFFICOLTÀ,113.8/PAG.}{
+ \node[text=golddk,font=\deco\footnotesize] at (\x,0) {\t};}
+\newcommand{\indexrow}[7]{%
+ \node[font=\small] at (3,{2-13*#1}) {#2};
+ \node[align=center,text width=51mm,font=\small] at (33.9,{2-13*#1})
+   {\textbf{#3}\\[.8mm]{\footnotesize\itshape #4}};
+ \node[font=\small] at (70.8,{2-13*#1}) {#5};
+ \node at (93.7,{2-13*#1}) {\diffd{#6}};
+ \node[font=\small] at (113.8,{2-13*#1}) {\pageref{#7}};
+ \draw[gold,line width=.35pt] (.2,{-4.5-13*#1})--(119.8,{-4.5-13*#1});}
+\indexrow{1}{1}{Acey Deucey}{Tre carte, una scommessa}{3–8}{1}{acey}
+\indexrow{2}{2}{Ventuno (Blackjack)}{Battere il banco senza sballare}{2–8}{1}{ventuno}
+\indexrow{3}{3}{Poker a 5 carte}{Il brivido del bluff}{2–6}{2}{poker}
+\indexrow{4}{4}{Gin Rummy}{Il duello delle combinazioni}{2}{3}{gin}
+\indexrow{5}{5}{Cuori (Hearts)}{La Donna di Picche da evitare}{4 (o 3)}{3}{cuori}
+\indexrow{6}{{\suitfont\color{gold}★}}{BONUS · Ramino}{Due mazzi, un tavolo di amici}{2–5}{2}{ramino}
+\end{tikzpicture}
+\end{center}
+\vspace{3mm}
 \secz{Da dove cominciare?}
 \begin{itemize}
  \item \textbf{Siete in tanti e volete ridere:} Acey Deucey o Ventuno.
@@ -90,500 +93,475 @@ Stasera tocca a voi. Il mazzo che avete tra le mani è il vostro biglietto d’i
  \item \textbf{Quattro amici e una serata lunga:} Cuori.
 \end{itemize}
 \vfill
-\enea{Se non ricordate una regola, tornate alla pagina del gioco: è tutto qui dentro.}
+\enea{Date prima un’occhiata alla preparazione: così scegliete il gioco giusto per il vostro tavolo e avete tutto a portata di mano.}
 
-%% ------------------------------------------------------------
 %% 4 · IL MAZZO IN BREVE
-%% ------------------------------------------------------------
 \startpage
 \bigtitle{Il mazzo in breve}{tutto quello che serve sapere prima di dare le carte}
 \divider
-\begin{minipage}[t]{39mm}\vspace{0pt}\centering
- \scalebox{1.9}{\hand{Q/H}}\\[1mm]
- {\scriptsize\itshape La Donna di Cuori: valore in alto a sinistra, seme sotto.}
+\begin{minipage}[c]{34mm}\centering
+ \scalebox{1.8}{\hand{Q/H}}\par\vspace{1.5mm}
+ {\footnotesize Q = Donna\quad\sH{} = Cuori}
 \end{minipage}\hfill
-\begin{minipage}[t]{\dimexpr\linewidth-42mm\relax}\vspace{0pt}
- Il mazzo ha \textbf{52 carte}: quattro \textbf{semi} da 13 carte ciascuno.\par
- \medskip
- \begin{tabular}{@{}ll@{}}
-  {\suitfont\color{cardred}♥} & \textbf{Cuori} e {\suitfont\color{cardred}♦} \textbf{Quadri} — i semi rossi\\
-  {\suitfont ♠} & \textbf{Picche} e {\suitfont ♣} \textbf{Fiori} — i semi neri
- \end{tabular}\par
- \medskip
- Di norma il seme \textbf{non} rende una carta migliore di un’altra.
+\begin{minipage}[c]{82mm}\raggedright
+ Il mazzo ha \textbf{52 carte}: quattro \textbf{semi} da 13 carte ciascuno.\par\medskip
+ \sH{} \textbf{Cuori} e \sD{} \textbf{Quadri}: i semi rossi.\par
+ \sS{} \textbf{Picche} e \sC{} \textbf{Fiori}: i semi neri.\par\medskip
+ Il seme non rende una carta più alta di un’altra, ma in alcuni giochi determina quali carte si possono giocare.
 \end{minipage}
-
 \secz{Dal più basso al più alto}
 \begin{center}
  \tikz{\foreach \v [count=\i from 0] in {2,3,4,5,6,7,8,9,10,J,Q,K,A}{
    \node[draw=gold,fill=white,minimum width=7.6mm,minimum height=9mm,inner sep=0,font=\bfseries\small,text=txt] at (\i*8.3mm,0) {\v};}}
 \end{center}
-\vspace{-1mm}
-Le figure sono il \textbf{Fante} (J), la \textbf{Donna} (Q) e il \textbf{Re} (K). L’\textbf{Asso} (A) è speciale: di solito è la più alta, ma in certi giochi vale anche \emph{1}. Ogni gioco lo specifica.
+Le figure sono \textbf{Fante} (J), \textbf{Donna} (Q) e \textbf{Re} (K). L’\textbf{Asso} (A) è di solito la carta più alta; in alcuni giochi è basso o vale 1. Ogni scheda lo specifica.
 
 \secz{Il vocabolario del tavolo}
-\begin{tabularx}{\linewidth}{@{}>{\bfseries}p{23mm}X@{}}
- Mazziere & chi dà le carte; il ruolo passa a sinistra a ogni mano.\\
- Alzare & tagliare il mazzo (lo fa chi sta a destra del mazziere).\\
- Smazzare & distribuire le carte, in senso orario, a partire da sinistra del mazziere.\\
+\begingroup\renewcommand{\arraystretch}{1.2}
+\begin{tabularx}{\linewidth}{@{}>{\bfseries}p{23mm}>{\raggedright\arraybackslash}X@{}}
+ Mazziere & chi distribuisce le carte e gioca come gli altri.\\
+ Banco & nel Ventuno, il giocatore contro cui giocano tutti gli altri.\\
+ Mano & dalla distribuzione delle carte al risultato. Una partita può comprendere più mani.\\
+ Alzare & tagliare il mazzo; lo fa chi sta a destra del mazziere.\\
+ Smazzare & distribuire le carte in senso orario, una alla volta.\\
+ Carte & coperte: dorso in alto, valore nascosto. Scoperte: valore visibile.\\
  Scarto & la carta che si getta via, di solito scoperta.\\
- Piatto (\emph{pot}) & le fiches messe al centro, in palio per chi vince.\\
- Sballare & superare il limite consentito (nel Ventuno, 21).\\
-\end{tabularx}
-
-\secz{Le fiches}
-Date a ciascuno lo stesso numero di fiches (venti vanno bene quasi sempre).
+ Piatto (\emph{pot}) & le fiches al centro del tavolo, usate per pagare le vincite.\\
+ Sballare & superare il limite consentito: nel Ventuno, 21.\\
+\end{tabularx}\endgroup
 \vfill
-\ettore{Mescolate sempre con calma e fate alzare il mazzo: così nessuno ha carte truccate… compresi voi.}
+\ettore{Mescolate bene e fate alzare il mazzo prima di distribuire: il rito del tavolo comincia da qui.}
 
-%% ------------------------------------------------------------
-%% 5 · ACEY DEUCEY
-%% ------------------------------------------------------------
-\startpage
+%% 5–6 · ACEY DEUCEY
+\startpage\label{acey}
 \gameheader{1}{ACEY DEUCEY}{Dentro o fuori? Tre carte e un po’ di sangue freddo}{3–8 giocatori}{10–20 minuti}{1}{enea}
-\textbf{L’idea.} Due carte sul tavolo, una scommessa: la terza cadrà \emph{in mezzo} alle prime due? Si punta contro il piatto, non contro gli altri: chi indovina incassa, chi sbaglia rimpingua la cassa.
-
+\textbf{L’idea.} Il mazziere gira due carte. Tu scommetti che la terza avrà un valore \textbf{in mezzo alle due}. Con 4 e J, per esempio, vinci con 5, 6, 7, 8, 9 o 10. I semi non contano; \textbf{l’Asso è sempre alto}.
 \secz{Preparazione}
-Ognuno parte con \textbf{10 fiches}; tutti mettono \textbf{1 fiche} nel piatto, al centro. Il mazziere cambia a ogni giro; se il piatto si svuota, tutti rimettono 1 fiche. Vince chi alla fine ha più fiches.
-
-\secz{Come si gioca}
+Ognuno riceve \textbf{10 fiches} e ne mette \textbf{1 al centro}: questi gettoni formano il \textbf{piatto comune}. Il mazziere mescola le 52 carte senza jolly. Comincia il giocatore alla sua sinistra.
+\secz{Il tuo turno, passo per passo}
 \begin{enumerate}
- \item Il mazziere scopre \textbf{due carte} davanti al giocatore alla sua sinistra.
- \item Il giocatore \textbf{scommette}, da 1 fiche fino all’intero piatto, che la terza carta avrà un valore \emph{compreso} tra le due. Oppure \textbf{passa}, senza rischiare nulla.
- \item Il mazziere scopre la \textbf{terza carta}: si controlla l’esito (vedi sotto).
- \item Tocca al giocatore successivo, con due carte nuove.
+ \item Il mazziere gira \textbf{due carte davanti a te}. Se hanno lo stesso valore o sono consecutive, come 6 e 7, le scarta e ne gira due nuove.
+ \item Puoi dire \textbf{«Passo»}: non paghi nulla e tocca al prossimo. Oppure dici quanto punti, per esempio \textbf{«Punto 2»}. Tieni per ora quelle fiches davanti a te.
+ \item Il mazziere gira la \textbf{terza carta}. Confrontala con le prime due e paga o incassa come negli esempi qui sotto. Poi scartate le carte e passate al prossimo giocatore.
 \end{enumerate}
-\vspace{-1.5mm}
 \begin{center}
-\renewcommand{\arraystretch}{1.0}
-\begin{tabular}{@{}c@{\hspace{5mm}}c@{\hspace{5mm}}c@{}}
- \handm{4/C/n,J/D/n,9/S/u} & \handm{4/C/n,J/D/n,2/H/u} & \handm{4/C/n,J/D/n,J/S/u}\\[1mm]
- {\footnotesize\textbf{Dentro!}} & {\footnotesize\textbf{Fuori}} & {\footnotesize\textbf{Palo!}}\\
- {\scriptsize\itshape vinci la puntata} & {\scriptsize\itshape la puntata va nel piatto} & {\scriptsize\itshape paghi il doppio}
-\end{tabular}
+\examplecell{36mm}{\handm{4/C/n,J/D/n,9/S/u}}{\textbf{In mezzo: vinci.}\\Prendi 2 dal piatto.}\hfill
+\examplecell{36mm}{\handm{4/C/n,J/D/n,2/H/u}}{\textbf{Fuori: perdi.}\\Metti 2 nel piatto.}\hfill
+\examplecell{36mm}{\handm{4/C/n,J/D/n,J/S/u}}{\textbf{Uguale: «palo».}\\Metti 4 nel piatto.}
+\par\vspace{1mm}{\footnotesize Negli esempi hai puntato 2. Se vinci, tieni anche le tue 2 fiches.}
 \end{center}
-\vspace{-1mm}
-\textbf{Palo} = la terza carta ha lo stesso valore di una delle due.
-
-\secz{Regole da ricordare}
-\begin{itemize}
- \item Carte \textbf{uguali o consecutive} (6 e 7): nessuno spazio, se ne scoprono due nuove.
- \item \textbf{Asso:} se esce per primo, scegli se è alto (sopra il Re) o basso (sotto il 2); per secondo, è alto.
- \item \textbf{Trucco:} con Asso e 2 perdi solo se esce un Asso o un 2.
-\end{itemize}
-
-%% ------------------------------------------------------------
-%% 6–7 · VENTUNO
-%% ------------------------------------------------------------
+\begin{callout}
+\textbf{Non sommare le carte}: conta solo l’ordine dei valori. Prima di giocare, leggete i limiti delle puntate nella pagina seguente.
+\end{callout}
 \startpage
-\gameheader{2}{VENTUNO}{Blackjack: battere il banco senza sballare}{2–8 giocatori}{20 minuti}{1}{ettore}
-\textbf{L’idea.} Avvicinarsi il più possibile a \textbf{21} senza superarlo, battendo il \emph{banco}, che è uno dei giocatori. Ci si sfida contro il banco, non tra di voi. Il banco passa a sinistra a ogni mano, così tutti hanno lo stesso vantaggio.
+\bigtitle{Acey Deucey, in pratica}{quanto puntare e come proseguire}
+\secz{Quanto puoi puntare?}
+La puntata minima è \textbf{1 fiche}. Devi rispettare due limiti:
+\begin{itemize}
+ \item \textbf{Il piatto deve poterti pagare.} Se contiene 5 fiches, non puoi puntarne più di 5.
+ \item \textbf{Devi poter pagare anche il palo.} Per puntare 2 devi avere almeno 4 fiches: 2 per la puntata e altre 2 se la terza carta è uguale a una delle prime due.
+\end{itemize}
+Perciò, se hai 7 fiches, puoi puntarne al massimo \textbf{3}: ne servirebbero 8 per puntarne 4. Se hai meno di 2 fiches, puoi solo passare.
+\secz{Un turno con una puntata di 2}
+Hai \textbf{8 fiches} e nel piatto ce ne sono \textbf{5}. Escono 4 e J. Dici «Punto 2» e tieni le tue fiches davanti a te. Il mazziere gira la terza carta:
+\begin{itemize}
+ \item Esce \textbf{9}: è fra 4 e J. Prendi 2 fiches dal piatto e tieni le tue: ora ne hai \textbf{10}.
+ \item Esce \textbf{2}: è fuori dall’intervallo. Metti 2 delle tue fiches nel piatto: te ne restano \textbf{6}.
+ \item Esce \textbf{J}: è un palo. Metti nel piatto 4 fiches in tutto: te ne restano \textbf{4}.
+\end{itemize}
+\secz{Quando tocca agli altri?}
+Dopo il tuo turno, le carte usate vanno negli scarti. Il mazziere ne gira due nuove per il giocatore successivo, in senso orario. Dopo un turno a testa, \textbf{mazziere compreso}, il giro è finito e il ruolo di mazziere passa a sinistra.
+\secz{Fine della partita}
+Dopo \textbf{tre giri}, dividete il piatto fra chi è ancora in gioco. Gli eventuali resti vanno, uno a testa, da sinistra del mazziere. Vince chi ha più fiches; a pari numero si condivide la vittoria. Se resta una sola persona, la partita finisce subito e prende il piatto.
+\begin{callout}
+\textbf{Piatto vuoto:} tutti aggiungono 1 fiche; chi non può esce.\\
+\textbf{Mazzo quasi finito:} se restano meno di tre carte, rimescolate gli scarti prima del turno.\\
+\textbf{Asso e 2:} una carta dal 3 al Re vince; un altro Asso o un altro 2 fa palo.
+\end{callout}
 
+%% 7–8 · VENTUNO
+\startpage\label{ventuno}
+\gameheader{2}{VENTUNO}{Blackjack: battere il banco senza sballare}{2–8 giocatori}{20–40 minuti}{1}{ettore}
+\textbf{L’idea.} Somma i valori delle tue carte: devi fare più del \textbf{banco}, senza superare \textbf{21}. Il banco è uno di voi e gioca contro tutti gli altri. Il ruolo passa a sinistra dopo ogni mano.
 \secz{Quanto valgono le carte}
 \begin{center}
-\begin{tabular}{@{}c@{\hspace{6mm}}c@{\hspace{6mm}}c@{}}
- \hand{7/S,4/D} & \hand{K/H,Q/C} & \hand{A/D}\\[1mm]
- {\footnotesize\textbf{2–10}} & {\footnotesize\textbf{Fante, Donna, Re}} & {\footnotesize\textbf{Asso}}\\
- {\scriptsize\itshape il loro numero} & {\scriptsize\itshape valgono 10} & {\scriptsize\itshape 1 oppure 11, come conviene}
-\end{tabular}
+\examplecell{34mm}{\hand{7/S,4/D}}{\textbf{2–10}\\Il loro numero}\hfill
+\examplecell{38mm}{\hand{K/H,Q/C}}{\textbf{Fante, Donna, Re}\\10 punti}\hfill
+\examplecell{38mm}{\hand{A/D}}{\textbf{Asso}\\1 oppure 11}
 \end{center}
-Il seme non conta. Un Asso vale 11 finché non ti fa sballare, poi diventa 1: Asso e 6 fanno 17 (o 7, se preferisci).
-
+Il seme non conta. L’Asso vale 11 se non fa sballare, altrimenti 1: \textbf{Asso e 6 fanno 17}; pescando un 9 diventano \textbf{16}, perché l’Asso conta 1.
 \secz{Preparazione}
-Ognuno parte con \textbf{20 fiches}. In ogni mano la puntata è fissa: \textbf{2 fiches} a testa. Un giocatore fa il banco; sceglietelo a sorte. Chi sta a destra del banco alza il mazzo.
-
-\secz{Una mano}
-\begin{enumerate}
- \item Tutti i giocatori puntano \textbf{2 fiches}.
- \item Il banco dà \textbf{due carte scoperte} a ciascun giocatore e due a sé stesso: \textbf{una scoperta} e \textbf{una coperta}.
- \item \textbf{Blackjack.} Un Asso più una carta da 10 (10, Fante, Donna o Re) nelle prime due carte è un \emph{Blackjack}: batte qualsiasi altro 21 e paga \textbf{3 a 2} (se avevi puntato 2, ne vinci 3).
- \item Se la carta scoperta del banco è un Asso o un valore da 10, il banco guarda subito la sua carta coperta: se ha Blackjack lo mostra, e tutti perdono la puntata, tranne chi ha a sua volta un Blackjack (pareggio).
-\end{enumerate}
-\startpage
-\begin{enumerate}[resume]
- \item \textbf{Turno dei giocatori,} da sinistra del banco: ciascuno sceglie \textbf{«Carta!»} (ne riceve un’altra scoperta, quante volte vuole) oppure \textbf{«Sto!»} (si ferma).
- \item \textbf{Sballato:} chi supera 21 perde subito la puntata, anche se poi il banco sballa a sua volta.
- \item \textbf{Turno del banco:} scopre la carta coperta e deve \textbf{prendere carte finché non arriva ad almeno 17}. Con 17 o più si ferma, sempre.
- \item \textbf{Confronto:} il banco paga o incassa dalle proprie fiches.
-\end{enumerate}
-\vspace{1mm}
-\begin{center}\renewcommand{\arraystretch}{1.15}\footnotesize
-\begin{tabular}{@{}p{49mm}p{54mm}@{}}
- \rowcolor{tint}\textbf{Se\ldots} & \textbf{allora\ldots}\\
- Il banco sballa & tutti i giocatori rimasti vincono: +2 fiches \\ Tu sballi & perdi la puntata \\
- Il tuo totale supera quello del banco & vinci: +2 fiches\\
- Totale uguale & pareggio: riprendi la tua puntata\\
- Il tuo totale è inferiore & perdi la puntata\\ 
-\end{tabular}
-\end{center}
-\vspace{2mm}
-\begin{center}
-\begin{tabular}{@{}c@{\hspace{10mm}}c@{}}
- \hand{A/S,K/D} & \hand{10/H,6/C,8/D}\\[1mm]
- {\footnotesize\textbf{Blackjack!} Vinci 3 fiches.} & {\footnotesize\textbf{24: sballato.} Perdi la puntata.}
-\end{tabular}
-\end{center}
-\secz{Regole facoltative}
-\begin{itemize}
- \item \textbf{Raddoppio:} dopo le prime due carte, puoi raddoppiare la puntata a patto di ricevere \emph{una sola} carta e poi fermarti.
- \item Quando restano poche carte (ad esempio meno di 15), rimescolate tutto il mazzo.
-\end{itemize}
+\textbf{20 fiches a testa}, banco iniziale a sorte. Si giocano \textbf{tre giri di banco}: in ogni giro tutti lo tengono una volta. La puntata è \textbf{2 fiches}, solo per chi non fa il banco.
 \begin{callout}
-\textbf{Perché «Black Jack»?} Il Ventuno è nato come passatempo da salotto nell’Europa del Settecento. Secondo la leggenda, il nome americano viene da un premio speciale (10 a 1!) dato a chi aveva l’Asso di Picche con un Jack nero; gli storici sono divisi, ma il nome è rimasto, il premio no.
+\textbf{Blackjack} = Asso più 10, J, Q o K nelle prime due carte. Batte un 21 fatto con più carte e paga \textbf{3 a 2}: puntando 2, riprendi le tue 2 e ne vinci 3.
 \end{callout}
-\vfill
-\enea{Da \textbf{17 in su}, di solito conviene fermarsi. Con \textbf{11 o meno} chiedi carta senza paura: non puoi sballare. Tra 12 e 16, guarda la carta scoperta del banco: se è bassa (\textbf{da 2 a 6}), spesso conviene fermarsi e lasciare che sia il banco a rischiare. 
-}
+\secz{Distribuzione e controllo}
+\begin{enumerate}
+ \item I giocatori mettono 2 fiches davanti a sé. Il banco dà \textbf{due carte scoperte} a ciascuno e due a sé: una scoperta e una coperta.
+ \item Con Asso o valore da 10 scoperto, il banco controlla la carta coperta. Se ha Blackjack, lo mostra e incassa le puntate. Chi ha a sua volta Blackjack riprende le proprie 2 fiches: è un pareggio.
+ \item Se il banco non ha Blackjack, paga subito gli eventuali Blackjack dei giocatori: chi è già stato pagato \textbf{non chiede altre carte e non viene pagato di nuovo}.
+\end{enumerate}
 
-%% ------------------------------------------------------------
-%% 8–10 · POKER
-%% ------------------------------------------------------------
 \startpage
-\gameheader{3}{POKER}{A cinque carte, con cambio: il re degli speakeasy}{2–6 giocatori}{30 minuti}{2}{enea}
-\textbf{L’idea.} Ottenere la \textbf{migliore combinazione di 5 carte}: si può cambiare qualche carta una volta sola, e tra una puntata e l’altra c’è il bluff, cioè fare credere agli altri di avere più di quanto si ha. Negli anni Venti si giocava così (\emph{Five-Card Draw}): il Texas Hold’em arriverà a Las Vegas solo negli anni Sessanta.
+\secz{Carta o sto?}
+\begin{enumerate}[resume]
+ \item Da sinistra del banco, ciascuno sceglie \textbf{«Carta!»}: il banco gli aggiunge una carta scoperta. Può chiederne ancora o dire \textbf{«Sto!»}, fermandosi. Chi supera 21 perde subito la puntata, anche se poi sballa il banco.
+ \item Il banco scopre la carta coperta: \textbf{pesca sotto 17 e si ferma da 17 in su}, anche con Asso e 6.
+ \item Ogni giocatore rimasto confronta il proprio totale con quello del banco. Il banco incassa o paga con le proprie fiches, seguendo la tabella.
+\end{enumerate}
+\begin{center}\small\setlength{\tabcolsep}{2mm}\renewcommand{\arraystretch}{1.35}
+\begin{tabular}{@{}m{50mm}m{62mm}@{}}
+\rowcolor{tint}\textbf{Se…} & \textbf{allora…}\\
+Tu sballi & perdi le 2 fiches puntate\\
+Il banco sballa, tu no & riprendi 2 e vinci altre 2\\
+Il tuo totale è maggiore & riprendi 2 e vinci altre 2\\
+I totali sono uguali & riprendi le tue 2: pareggio\\
+Il tuo totale è minore & perdi le 2 fiches puntate\\
+\end{tabular}
+\end{center}
+\begin{center}
+\examplecell{53mm}{\hand{A/S,K/D}}{\textbf{Blackjack: +3} netti.}\hfill
+\examplecell{53mm}{\hand{10/H,6/C,8/D}}{\textbf{24: sballato, −2.}}
+\end{center}
+\secz{Raddoppio e gestione del mazzo}
+Dopo le prime due carte puoi \textbf{raddoppiare a 4 fiches}: ricevi una sola carta, poi ti fermi. Vinci o perdi 4; un 21 con tre carte non è Blackjack. \textbf{Rimescolate tutte le carte tra una mano e l’altra}, mai durante una mano.
+\secz{Riserva e fine partita}
+Per questa serata i gettoni servono a contare: se a qualcuno, banco compreso, finiscono, ne prende dalla riserva e \textbf{annota quanti ne ha ricevuti}. Dopo i tre giri vince chi ha più fiches, \textbf{sottraendo quelle prese in prestito}. Il saldo può essere negativo; a pari saldo si condivide la vittoria.
+\vfill
+\enea{Non serve fare 21: \textbf{con 19 batti un banco da 18}. Con 18 contro 18 è pareggio e riprendi la puntata. Se il tuo totale è \textbf{11 o meno}, chiedere una carta non può farti sballare.}
 
+%% 9–11 · POKER
+\startpage\label{poker}
+\gameheader{3}{POKER}{A cinque carte, con cambio: il brivido del bluff}{2–6 giocatori}{30–60 minuti}{2}{enea}
+\textbf{L’idea.} Formare la migliore mano di \textbf{cinque carte}, con un solo cambio. Si usa il \textbf{mazzo completo da 52}, senza jolly. Per vincere puoi avere le carte migliori… oppure convincere tutti a ritirarsi.
 \secz{Preparazione}
-Ognuno parte con \textbf{20 fiches}. Si sceglie un mazziere; ogni mano il ruolo passa a sinistra. \textbf{Le puntate valgono sempre 1 fiche}, così le regole restano semplici.
-
+\textbf{20 fiches a testa}; il mazziere passa a sinistra a ogni mano. La prima puntata e ogni aumento sono di \textbf{1 fiche}, con al massimo \textbf{tre rilanci complessivi per giro di puntate}.
 \secz{Le parole del poker}
-\begin{tabularx}{\linewidth}{@{}>{\bfseries}p{23mm}X@{}}
- Check & «parola»: restare in gioco senza puntare (se nessuno ha ancora puntato).\\
- Bet & puntare 1 fiche.\\
- Call & «vedere»: mettere la stessa puntata di chi ha puntato prima di te.\\
- Raise & rilanciare: vedere e aggiungere 1 fiche (massimo 3 rilanci per giro).\\
- Fold & ritirarsi: getti le carte e perdi quello che avevi messo.\\
-\end{tabularx}
-
+\begingroup\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{@{}>{\bfseries}p{17mm}>{\raggedright\arraybackslash}X@{}}
+ Check & «parola»: resti in gioco senza puntare (se nessuno ha puntato).\\
+ Bet & sei il primo a puntare nel giro: metti 1 fiche nel piatto.\\
+ Call & «vedo»: pareggi la puntata più alta del giro.\\
+ Raise & «rilancio»: pareggi la puntata più alta, poi aggiungi ancora 1 fiche.\\
+ Fold & ti ritiri e lasci nel piatto quanto hai già versato.\\
+\end{tabularx}\endgroup
 \secz{Una mano, passo per passo}
 \begin{enumerate}
- \item \textbf{Ante.} Ognuno mette 1 fiche nel piatto.
- \item \textbf{Distribuzione.} Il mazziere dà \textbf{5 carte coperte} a testa, una alla volta. Guardatele senza farvi vedere.
- \item \textbf{Prime puntate.} Parte il giocatore a sinistra del mazziere, poi si prosegue in senso orario: check, bet, call, raise o fold. Il giro finisce quando tutti hanno messo lo stesso o si sono ritirati.
- \item \textbf{Il cambio.} Sempre da sinistra del mazziere, ciascun giocatore ancora in gioco scarta da \textbf{0 a 3 carte} (coperte) e ne riceve altrettante dal mazzo.
- \item \textbf{Seconde puntate.} Un secondo giro di puntate identico al primo.
- \item \textbf{Showdown.} Chi è ancora in gioco \textbf{mostra le carte}: la combinazione migliore vince il piatto (la classifica è nella pagina seguente). Se tutti si ritirano tranne uno, quel giocatore vince senza mostrare nulla: ecco il bluff!
+ \item \textbf{Quota iniziale.} Prima di ricevere le carte, ognuno mette 1 fiche al centro del tavolo. Poi il mazziere dà \textbf{5 carte coperte} a ciascuno: guardate solo le vostre.
+ \item \textbf{Primo giro di puntate:} comincia chi è a sinistra del mazziere. Si prosegue in senso orario finché tutti hanno agito e pareggiato l’ultima puntata, oppure hanno fatto fold. Se tutti fanno check, si procede comunque.
+ \item \textbf{Cambio:} da sinistra del mazziere, chi è ancora in gioco sceglie da \textbf{0 a 3 carte} da restituire coperte al mazziere e ne riceve lo stesso numero dal mazzo.
+ \item \textbf{Secondo giro:} stesse regole; apre il primo giocatore ancora in gioco a sinistra del mazziere.
+ \item \textbf{Showdown:} chi è rimasto mostra le carte; vince la mano migliore (classifica nella pagina seguente). Se resta un solo giocatore, incassa subito senza mostrare nulla.
 \end{enumerate}
-
 \startpage
 \bigtitle{La classifica delle mani}{dalla più forte alla più debole}
 \vspace{-1mm}
+% Rombo di misura fissa (non dipende dalla cifra), staccato dal testo;
+% descrizione con l'interlinea del suo corpo (\par dentro il gruppo);
+% stesso spazio sopra e sotto il filetto (sotto si somma \parskip).
 \newcommand{\rankrow}[4]{%
- \noindent\begin{minipage}[c]{7mm}\centering\tikz\node[diamond,draw=gold,fill=ink,inner sep=1.4pt,text=cream,font=\decob\bfseries\small]{#1};\end{minipage}%
- \begin{minipage}[c]{54mm}\raggedright\textbf{#2}\\[-.3mm]{\scriptsize #3}\end{minipage}\hfill
+ \noindent\begin{minipage}[c]{9mm}\raggedright\tikz\node[diamond,draw=gold,fill=ink,inner sep=0pt,minimum size=6.4mm,text=cream,font=\decob\bfseries\small]{#1};\end{minipage}%
+ \begin{minipage}[c]{\dimexpr\linewidth-9mm-41mm\relax}\raggedright{\bfseries #2\par}\vspace{.3mm}{\scriptsize #3\par}\end{minipage}\hfill
  \begin{minipage}[c]{39mm}\raggedleft\scalebox{.78}{\hand{#4}}\end{minipage}\par
- \vspace{.6mm}{\color{gold}\hrule height .35pt}\vspace{.9mm}}
+ \vspace{1.5mm}{\color{gold}\hrule height .35pt}\vspace{\dimexpr1.5mm-\parskip\relax}}
 \rankrow{1}{Scala colore}{Cinque carte in sequenza, tutte dello stesso seme. La più alta (10-J-Q-K-A) è la \emph{Scala reale}.}{10/H,J/H,Q/H,K/H,A/H}
 \rankrow{2}{Poker}{Quattro carte dello stesso valore, più una qualsiasi.}{9/S,9/H,9/D,9/C,K/S}
 \rankrow{3}{Full}{Un tris più una coppia.}{Q/S,Q/H,Q/D,7/C,7/S}
 \rankrow{4}{Colore}{Cinque carte dello stesso seme, non in sequenza.}{A/C,J/C,8/C,5/C,2/C}
-\rankrow{5}{Scala}{Cinque carte in sequenza, di semi diversi. L’Asso può stare in fondo (A-2-3-4-5) o in cima (10-J-Q-K-A), ma non in mezzo.}{5/S,6/D,7/C,8/H,9/S}
+\rankrow{5}{Scala}{Cinque carte in sequenza, non tutte dello stesso seme. Asso basso (A-2-3-4-5) o alto (10-J-Q-K-A).}{5/S,6/D,7/C,8/H,9/S}
 \rankrow{6}{Tris}{Tre carte dello stesso valore.}{8/S,8/H,8/D,K/C,3/S}
 \rankrow{7}{Doppia coppia}{Due coppie diverse, più una carta.}{J/S,J/D,4/C,4/H,A/D}
 \rankrow{8}{Coppia}{Due carte dello stesso valore.}{10/H,10/C,A/S,7/D,3/C}
 \rankrow{9}{Carta alta}{Nessuna combinazione: conta la carta più alta.}{A/H,J/C,8/D,6/S,3/D}
 \vfill
-\begin{center}\itshape\footnotesize\color{golddk}Il seme non conta mai nel confronto tra mani: a parità di combinazione si guarda il valore delle carte.\end{center}
+\begin{center}\itshape\footnotesize\color{golddk}Il seme non conta mai: a parità di combinazione si guarda il valore delle carte.\end{center}
 
+
+%% 11 · SPAREGGI E CAMBIO
 \startpage
 \secz{Chi vince a parità di combinazione?}
-Si confrontano i \textbf{valori}, partendo dalla carta più importante della combinazione:
+I semi non spareggiano mai. Confrontate i valori così:
 \begin{itemize}
- \item \textbf{Coppia, tris, poker, full:} vince il valore più alto della combinazione (un tris di 9 batte un tris di 7; nel full conta il tris).
- \item \textbf{Doppia coppia:} prima la coppia più alta, poi la seconda, poi la carta rimasta.
- \item \textbf{Scala, colore, carta alta:} vince la carta più alta. La scala A-2-3-4-5 è la più bassa, la 10-J-Q-K-A la più alta.
- \item \textbf{Stessa mano identica:} il piatto si divide. I semi non servono mai a spareggiare.
+ \item \textbf{Coppia:} prima la coppia, poi le tre carte rimaste dalla più alta alla più bassa, finché una differisce.
+ \item \textbf{Doppia coppia:} coppia maggiore, coppia minore, carta rimasta.
+ \item \textbf{Tris, poker, full:} vince il gruppo principale più alto; nel full conta il tris.
+ \item \textbf{Scala e scala colore:} vince la carta finale più alta. A-2-3-4-5 è la scala più bassa.
+ \item \textbf{Colore e carta alta:} confrontate tutte e cinque le carte in ordine decrescente, fino alla prima differenza.
 \end{itemize}
-
+Se tutte e cinque le carte hanno gli stessi valori, anche con semi diversi, \textbf{dividete il piatto}. Gli eventuali resti vanno, uno a testa, da sinistra del mazziere fra chi ha pareggiato.
 \secz{Un esempio di cambio}
-Ricevi queste carte. Hai due Assi: \textbf{tieni la coppia}, scarta le altre tre carte e pesca.
+Con due Assi, puoi tenere la coppia e cambiare le altre tre carte:
 \begin{center}
-\begin{tabular}{@{}c@{\hspace{8mm}}c@{}}
- \handm{A/S/u,A/D/u,7/C/d,4/H/d,2/S/d} & \handm{A/S/n,A/D/n,A/H/u,9/C/u,K/D/u}\\[1mm]
- {\footnotesize\itshape prima del cambio} & {\footnotesize\itshape dopo: un tris di Assi!}
-\end{tabular}
+\examplecell{55mm}{\handm{A/S/u,A/D/u,7/C/d,4/H/d,2/S/d}}{\itshape Prima: tieni i due Assi.}\hfill
+\examplecell{55mm}{\handm{A/S/n,A/D/n,A/H/u,9/C/u,K/D/u}}{\itshape Dopo: un tris di Assi!}
 \end{center}
-
-\secz{Il bluff}
-Il poker non è solo fortuna: puntare con decisione fa pensare agli altri che tu abbia carte forti, e può farli ritirare. Ma attenzione: se qualcuno ti vede, allo showdown l’inganno verrà a galla.
-
-\secz{Pochi trucchi di base}
-\begin{itemize}
- \item Con una \textbf{coppia o meglio}, tieni quelle carte e cambia le altre.
- \item Con \textbf{quattro carte dello stesso seme}, o in sequenza, vale la pena tentare il colore o la scala.
- \item Con \textbf{niente}, cambia 3 carte oppure ritirati senza spendere fiches.
- \item Osservate quante carte cambiano gli altri: chi ne cambia una sola ha di solito due coppie o è vicino a un colore.
-\end{itemize}
+\secz{Quando finisce la partita?}
+Un giro di mazziere è completo quando tutti hanno distribuito una volta. Si giocano \textbf{tre giri}; chi è uscito viene saltato. Per iniziare una mano servono \textbf{almeno 9 fiches}: coprono la quota iniziale e massimo 4 fiches in ciascuno dei due giri di puntate. Chi ne ha meno esce, conservando il proprio saldo. La partita finisce prima se restano meno di due giocatori. Vince chi ha più fiches; a pari merito si condivide la vittoria.
+\secz{Quanto metto per vedere?}
+\begin{callout}
+\textbf{Esempio di call:} hai già messo 1 fiche nel giro e il totale da vedere è salito a 3? Ne aggiungi solo \textbf{2}. La quota iniziale non conta come puntata del giro.
+\end{callout}
 \vfill
-\ettore{Un bluff funziona solo se la storia che racconti è credibile: non puntare forte con una mano che ha cambiato quattro carte. E ricorda il sorriso: l’espressione migliore è quella che non cambia mai.}
+\ettore{Il bluff ha un prezzo: se qualcuno vede, le carte decidono. Non serve rilanciare a ogni turno; scegli quando rischiare e tieni un’espressione indecifrabile.}
 
-%% ------------------------------------------------------------
-%% 11–13 · GIN RUMMY
-%% ------------------------------------------------------------
-\startpage
-\gameheader{4}{GIN RUMMY}{Il duello elegante: pescare, scartare, combinare}{2 giocatori}{20 minuti}{3}{ettore}
-\textbf{L’idea.} Con 10 carte in mano, formare \textbf{combinazioni} (tris e scale) e restare con il minor numero di punti in carte «spaiate». Chi per primo ne ha pochi \emph{«bussa»} e chiude la mano. Il Gin Rummy è stato inventato nel 1909 e negli anni Venti era ancora giovanissimo: la grande mania, a Hollywood, arriverà più tardi.
-
+%% 12–14 · GIN RUMMY
+\startpage\label{gin}
+\gameheader{4}{GIN RUMMY}{Il duello elegante: pescare, scartare, combinare}{2 giocatori}{30–45 minuti}{3}{ettore}
+\textbf{L’idea.} Con \textbf{10 carte}, formare tris e scale e ridurre i punti delle carte \textbf{spaiate}, cioè fuori dalle combinazioni. Quando ne restano pochi, puoi «bussare» e chiudere la mano. Si gioca \textbf{in due}, fino a 100 punti.
 \secz{Preparazione}
-Un mazzo da 52 carte, \textbf{senza jolly}. Si gioca in due. Si scelgono il mazziere (che poi alterna a ogni mano) e un blocco per i punti. La partita finisce a \textbf{100 punti}.
-
+Un mazzo da \textbf{52 carte senza jolly}, carta e penna. Scegliete a sorte il primo mazziere, poi alternatevi. \textbf{Anche il mazziere gioca}: non c’è un banco.
 \secz{Quanto valgono le carte}
-\textbf{Asso = 1} (sempre, qui è la carta più bassa).\newline
-Dal \textbf{2 al 10} il loro numero. \textbf{Fante, Donna e Re = 10}.
-
+\begin{itemize}
+ \item \textbf{Asso = 1}, sempre basso.
+ \item \textbf{Dal 2 al 10}: il loro numero.
+ \item \textbf{Fante, Donna e Re = 10}.
+\end{itemize}
 \secz{Le combinazioni}
 \begin{itemize}
- \item \textbf{Tris o poker:} 3 o 4 carte dello stesso valore (7\sS{} 7\sH{} 7\sD{}).
- \item \textbf{Scala:} 3 o più carte \emph{dello stesso seme} in sequenza (9\sC{} 10\sC{} J\sC{} Q\sC{}). L’Asso può stare solo all'inizio: A-2-3 è valida, Q-K-A \textbf{no}.
+ \item \textbf{Tris o poker:} 3 o 4 carte dello stesso valore, come \cardref{7}{\sS}, \cardref{7}{\sH}, \cardref{7}{\sD}.
+ \item \textbf{Scala:} almeno 3 carte dello stesso seme in sequenza, come \cardref{9}{\sC}, \cardref{10}{\sC}, \cardref{J}{\sC}, \cardref{Q}{\sC}. L’Asso sta solo \textbf{all’inizio}: A-2-3 vale, Q-K-A no.
 \end{itemize}
-Una carta può far parte di una sola combinazione. Le carte che non fanno parte di nessuna combinazione si chiamano \textbf{carte spaiate} (in inglese \emph{deadwood}) e i loro punti contano \emph{contro di te}.
+Una carta può appartenere a \textbf{una sola combinazione}. Il totale delle spaiate serve a capire quando puoi chiudere: \textbf{non va aggiunto al tuo punteggio di partita}. I punti che guadagni si calcolano a pagina \pageref{gin-esempio}.
+\secz{Distribuzione e prima mossa}
+Il mazziere dà \textbf{10 carte a testa}, ne gira una per iniziare gli \textbf{scarti} e lascia il resto coperto come \textbf{mazzo di pesca}.
 
-\secz{Preparazione della mano}
-Il mazziere dà \textbf{10 carte} a testa. La carta successiva viene girata scoperta: è l’inizio della pila degli \textbf{scarti}. Le carte rimaste, coperte, sono il \textbf{mazzo di pesca}.
-
-\secz{La prima mossa}
-Il giocatore che non ha dato le carte può \textbf{prendere la carta scoperta}, oppure rifiutarla. Se la rifiuta, la può prendere il mazziere. Se la rifiutano entrambi, il primo giocatore \textbf{pesca} dal mazzo, e da qui in avanti si gioca normalmente.
+Chi non ha distribuito può prendere la carta scoperta o rifiutarla. Se rifiuta, può prenderla il mazziere. Chi la prende \textbf{scarta e passa il turno}. Se entrambi rifiutano, chi non ha distribuito pesca dal mazzo e scarta: poi si alternano i turni normali.
 
 \startpage
 \secz{Un turno normale}
 \begin{enumerate}
- \item \textbf{Pesca} una carta: la prima del mazzo coperto \emph{oppure} la prima carta degli scarti.
- \item \textbf{Scarta} una carta, scoperta, sulla pila degli scarti. (Se hai preso proprio la carta scartata dall’altro, non puoi buttarla subito.)
+ \item \textbf{Pesca}: aggiungi alla tua mano una carta, scegliendo fra la prima del mazzo coperto e quella in cima agli scarti.
+ \item \textbf{Scarta}: scegli una delle tue carte e mettila scoperta sopra gli scarti. Se hai preso dagli scarti, non puoi rimettere subito la stessa carta.
 \end{enumerate}
-Dopo ogni turno hai sempre 10 carte.
-
-\secz{Bussare (\emph{knock}) e Gin}
-Quando, \emph{dopo aver scartato}, le tue carte spaiate valgono \textbf{10 punti o meno}, puoi \textbf{bussare}: dichiari «Busso!», scopri le tue combinazioni e i punti rimasti. Se hai \textbf{zero} punti spaiati hai fatto \textbf{Gin}: il massimo.
+Dopo aver pescato hai 11 carte; dopo lo scarto torni a \textbf{10}. Non posare le combinazioni sul tavolo finché qualcuno chiude.
+\label{gin-esempio}
+\secz{Bussare («knock») e Gin}
+Se, dopo lo scarto, le tue spaiate valgono \textbf{10 punti o meno}, puoi dichiarare «Busso!» e mostrare la mano. Con \textbf{zero punti spaiati} fai \textbf{Gin}. Non sei obbligato a bussare appena puoi.
 \begin{center}
-\begin{tabular}{@{}c@{\hspace{3.5mm}}c@{\hspace{3.5mm}}c@{}}
- \hand{7/S,7/H,7/D} & \hand{9/C,10/C,J/C,Q/C} & \hand{A/D,3/H,5/S}\\[1mm]
- {\footnotesize\textbf{Tris}} & {\footnotesize\textbf{Scala}} & {\footnotesize\textbf{Spaiate: 1+3+5 = 9}}
-\end{tabular}
+\examplecell{32mm}{\hand{7/S,7/H,7/D}}{\textbf{Tris}}\hfill
+\examplecell{40mm}{\hand{9/C,10/C,J/C,Q/C}}{\textbf{Scala}}\hfill
+\examplecell{40mm}{\hand{A/D,3/H,5/S}}{\textbf{Spaiate: 1\,+\,3\,+\,5\,=\,9}}
 \end{center}
-Con questa mano puoi bussare: hai 9 punti spaiati.
-
-\secz{Dopo il knock: l’«attacco»}
-L’altro giocatore scopre la sua mano, forma le sue combinazioni e può \textbf{attaccare} le sue carte spaiate alle \emph{tue} combinazioni (un Re di Fiori alla scala qui sopra, per esempio; un 7\sC{} al tris). Servono a ridurre i suoi punti. Se hai fatto Gin, invece, \textbf{non si può attaccare}.
-
+Con questa mano puoi bussare: le tre spaiate valgono 9.
+\secz{L’attacco dopo la bussata}
+Dopo che hai bussato, l’avversario mostra la mano e forma le sue combinazioni. Può poi \textbf{aggiungere le sue spaiate alle tue combinazioni}: per esempio un K\sC{} alla scala qui sopra, o un 7\sC{} al tris. Questo si chiama «attaccare» e riduce le sue spaiate. Tu \textbf{non puoi aggiungere carte alle sue combinazioni}. Con il Gin, invece, \textbf{nessuno può attaccare}.
 \secz{Quanti punti si fanno}
+In questa versione, Gin e controbussata hanno entrambi \textbf{25 punti di bonus}. Segna solo chi vince la mano:
 \begin{itemize}
- \item \textbf{Knock normale:} se i tuoi punti spaiati sono \emph{meno} di quelli dell’avversario, ottieni la \textbf{differenza}.
- \item \textbf{Gin:} ottieni i punti spaiati dell’avversario \textbf{più 25 di bonus}.
- \item \textbf{Controbussata (\emph{undercut}):} se i punti dell’avversario (dopo gli attacchi) sono \emph{uguali o inferiori} ai tuoi, \textbf{vince lui}: ottiene la differenza più \textbf{25 di bonus}.
-\end{itemize}
-Esempio: bussi con 9, l’avversario ha 14 e non può attaccare nulla: fai $14-9=5$ punti. Se invece, dopo l’attacco, lui ne avesse 6, fa $9-6=3$, più 25: \textbf{28 punti}!
-
-\secz{Casi particolari}
-\begin{itemize}
- \item Se nel mazzo di pesca restano solo \textbf{2 carte} e nessuno ha bussato, la mano è nulla: rimescolate e si rifà.
- \item Si somma mano dopo mano: il primo che arriva a \textbf{100 punti} vince la partita.
+ \item \textbf{Bussata vincente:} se, dopo gli attacchi, hai meno punti spaiati dell’altro, segni la \textbf{differenza}.
+ \item \textbf{Gin:} segni le spaiate avversarie \textbf{più 25}; vinci anche se l’altro ha zero spaiate.
+ \item \textbf{Controbussata (\emph{undercut}):} senza Gin, se l’altro resta con spaiate \textbf{uguali o inferiori} alle tue, segna lui la differenza \textbf{più 25}.
 \end{itemize}
 
 \startpage
+\secz{Fine della mano e della partita}
+Se chi pesca lascia \textbf{due carte nel mazzo} e poi scarta senza chiudere, la mano è nulla: nessun punto, rimescolate e ridistribuisce lo stesso mazziere. Altrimenti, il ruolo cambia a ogni mano. Vince la partita chi raggiunge o supera \textbf{100 punti}.
+\secz{Esempi di punteggio}
+\begin{callout}
+Bussi con \textbf{9}, l’altro resta a \textbf{14}: segni 14\,−\,9\,=\,5. Se invece scende a \textbf{6}, segna lui 9\,−\,6\,+\,25\,=\,28. A \textbf{9 contro 9}, l’altro segna 25.
+\end{callout}
+\secz{Un attacco che cambia il risultato}
+Nell’esempio di pagina \pageref{gin-esempio} bussi con 9. Dopo le proprie combinazioni, all’altro restano \cardref{7}{\sC}, \cardref{K}{\sC}, \cardref{2}{\sH} e \cardref{2}{\sC}: 21 punti. Attacca il 7 al tuo tris e il Re alla tua scala: resta con soli \textbf{4 punti}. Ti controbussa e segna 9\,−\,4\,+\,25\,=\,30. Ecco perché bussare comporta un rischio!
+
 \secz{Un po’ di strategia}
 \begin{itemize}
- \item \textbf{Scarta le carte alte} che non servono (Re, Donne, Fanti): contano 10 punti ciascuna.
- \item Tieni \textbf{coppie e carte vicine} dello stesso seme: possono diventare tris o scale.
- \item Se l’avversario raccoglie una carta dagli scarti, \emph{non scartare carte simili}: probabilmente gli servono.
- \item L’Asso è \textbf{comodo e leggero}: costa solo 1 punto.
- \item \textbf{Non bussare sempre appena puoi}: se l’avversario ha poche carte spaiate rischi la controbussata.
+ \item \textbf{Scarta le figure isolate}: valgono 10 punti ciascuna.
+ \item Conserva coppie e carte vicine dello stesso seme: possono diventare combinazioni.
+ \item Guarda cosa raccoglie l’altro dagli scarti: una carta vicina potrebbe aiutarlo.
+ \item Non bussare solo perché puoi: se l’altro ha poche spaiate, rischi la controbussata.
 \end{itemize}
-
 \secz{Riepilogo veloce}
 \begin{callout}
 \begin{enumerate}
- \item 10 carte a testa. Pesca, scarta, ripeti.
- \item Forma tris e scale. Le carte spaiate costano punti.
- \item Con 10 punti spaiati o meno puoi \textbf{bussare}.
- \item Vince la mano chi ha meno punti spaiati. Il Gin vale un bonus, la controbussata pure.
- \item Si gioca a 100 punti.
+ \item Dieci carte a testa. Pesca, scarta e tieni le combinazioni in mano.
+ \item Con al massimo 10 punti spaiati puoi bussare.
+ \item L’altro può attaccare: confrontate le spaiate \textbf{dopo} gli attacchi.
+ \item Il Gin blocca gli attacchi e vince sempre; la controbussata premia chi non ha bussato. Entrambi danno 25 di bonus.
+ \item Sommate le mani fino a 100 punti.
 \end{enumerate}
 \end{callout}
-
 \secz{Un po’ di storia}
-Il Gin Rummy discende dal Rummy ed è stato inventato nel 1909 da Elwood T. Baker. È rimasto uno dei giochi per due più amati: partite rapide, regole chiare e tanta tattica. Ideale per sfidare la persona accanto a voi, tra un ballo e l’altro.
+Nato negli Stati Uniti ai primi del Novecento, il Gin appartiene alla famiglia dei Rummy. La sua grande popolarità a Hollywood arriverà negli anni Quaranta: un duello rapido e tattico, perfetto fra un ballo e l’altro.
 \vfill
-\ettore{Per rendere la serata più sfidante, giocate a \textbf{tre mani su cinque}: chi vince la maggioranza si porta a casa il titolo di campione del tavolo. Poi si rivaleggia con un altro tavolo!}
+\ettore{Bussare è una scelta di tempo: chiudi prima che l’altro migliori, ma gli concedi un ultimo attacco. Il Gin richiede più pazienza e toglie questa possibilità all’avversario.}
 
-%% ------------------------------------------------------------
-%% 14–16 · CUORI
-%% ------------------------------------------------------------
-\startpage
-\gameheader{5}{CUORI}{Hearts: l’arte di non prendere punti}{4 giocatori (o 3)}{40 minuti}{3}{enea}
-\textbf{L’idea.} Qui si vince facendo il \textbf{minor numero di punti}. Ogni \textbf{Cuore} che prendi vale \textbf{1 punto}, la \textbf{Donna di Picche} ne vale \textbf{13}: gli altri semi non valgono nulla. È un gioco di «prese»: l’obiettivo è schivarle con stile. Ogni mano vale 26 punti in tutto, da distribuire (a malincuore) tra i giocatori.
-
+%% 15–17 · CUORI
+\startpage\label{cuori}
+\gameheader{5}{CUORI}{Hearts: l’arte di non prendere punti}{4 giocatori (o 3)}{60–90 minuti}{3}{enea}
+\textbf{L’idea.} Vince chi fa \textbf{meno punti}. Ogni Cuore preso vale \textbf{1 punto}, la Donna di Picche ne vale \textbf{13}; le altre carte valgono zero. Una mano normale distribuisce 26 punti. Per fare bene, spesso bisogna evitare di vincere le prese!
+\begin{callout}
+\textbf{Che cos’è una presa?} Tutti giocano una carta a testa. Chi vince raccoglie tutte le carte giocate: quelle con Cuori o Donna di Picche gli danno penalità. «Aprire» significa giocare la prima carta della presa.
+\end{callout}
 \secz{Preparazione}
-Si gioca in \textbf{quattro}, ognuno per sé. Mazzo da 52 carte. L’ordine va dal 2 (più bassa) all’Asso (più alta). \textbf{Non esiste briscola}: il seme non fa vincere nulla. Il mazziere dà \textbf{13 carte} a testa.
-
-\secz{Il passaggio}
-Prima di giocare, ognuno sceglie \textbf{3 carte} dalla propria mano e le passa coperte a un altro giocatore, senza guardare quelle che riceve prima di aver scelto. La direzione cambia a ogni mano:
+In \textbf{quattro}, ognuno per sé, con 52 carte senza jolly. Il mazziere dà \textbf{13 carte a testa} e passa a sinistra a ogni mano. Il 2 è basso, l’Asso alto. \textbf{Non c’è briscola}: vince la carta più alta del seme con cui si apre la presa.
+\secz{Il passaggio delle carte}
+Ognuno sceglie \textbf{3 carte della propria mano} e le dà coperte al giocatore indicato qui sotto. Riceve altre tre carte: può guardarle solo dopo aver consegnato le proprie. La direzione cambia a ogni mano:
 \begin{enumerate}
- \item mano 1: si passa a \textbf{sinistra};
- \item mano 2: a \textbf{destra};
- \item mano 3: \textbf{di fronte};
- \item mano 4: \textbf{nessun passaggio}, poi si ricomincia.
+ \item a \textbf{sinistra};
+ \item a \textbf{destra};
+ \item \textbf{di fronte};
+ \item \textbf{nessun passaggio}; poi ricomincia il ciclo.
 \end{enumerate}
-
-\secz{Si comincia}
-Apre la prima presa chi ha il \textbf{2 di Fiori}, che deve giocare per primo.
+\secz{La prima presa}
+Chi ha il \textbf{2 di Fiori} deve aprire con quella carta. Gli altri devono giocare una carta di Fiori, se ne hanno: si dice \textbf{«rispondere al seme»}. Chi non ha Fiori gioca una carta diversa, ma \textbf{non un Cuore né la Donna di Picche}, a meno che gli restino soltanto carte di questi due tipi.
 
 \startpage
-\secz{La presa}
-Una \textbf{presa} si svolge così: il primo gioca una carta, poi tutti, in senso orario, ne giocano una a testa.
+\secz{Le prese successive}
 \begin{itemize}
- \item Se puoi, devi \textbf{rispondere al seme} (cioè giocare una carta dello stesso seme della prima).
- \item Se non hai quel seme, puoi giocare \textbf{qualsiasi carta}: è il momento giusto per liberarti di Cuori e della Donna di Picche… regalandoli a un altro!
- \item Vince la presa la \textbf{carta più alta del seme di apertura}. Chi vince raccoglie le carte (e i punti che contengono) e \textbf{apre} la presa successiva.
+ \item Chi ha vinto la presa precedente \textbf{apre} la nuova.
+ \item Devi \textbf{rispondere al seme}, se puoi. Solo se non hai nessuna carta di quel seme puoi giocarne una diversa, anche con penalità: non potrà vincere quella presa.
+ \item La carta più alta del \textbf{seme di apertura} vince: chi la gioca raccoglie tutte le carte della presa, con i relativi punti.
 \end{itemize}
 \begin{center}
-\begin{tabular}{@{}c@{\hspace{3mm}}c@{\hspace{3mm}}c@{\hspace{3mm}}c@{}}
- \handm{8/C/n} & \handm{3/C/n} & \handm{K/C/u} & \handm{5/H/n}\\[1mm]
- {\scriptsize\itshape apre} & {\scriptsize\itshape risponde} & {\scriptsize\itshape vince la presa} & {\scriptsize\itshape non ha Fiori: scarta}
-\end{tabular}
+\examplecell{25mm}{\handm{8/C/n}}{\itshape Apre}\hfill
+\examplecell{25mm}{\handm{3/C/n}}{\itshape Risponde}\hfill
+\examplecell{25mm}{\handm{K/C/u}}{\itshape Vince}\hfill
+\examplecell{32mm}{\handm{5/H/n}}{\itshape Non ha Fiori}
 \end{center}
-Il Re di Fiori è la carta più alta dei Fiori: prende tutte e quattro le carte, \textbf{quindi anche il 5 di Cuori}. Costo: 1 punto.
-
-\secz{Alcune regole importanti}
+\textbf{Esempio dopo la prima presa.} Il K\sC{} è il Fiori più alto \textbf{tra le carte giocate}: prende anche il 5\sH{} e quindi 1 punto. Un Asso di Fiori avrebbe battuto il Re.
+\secz{Cuori «rotti» e Donna di Picche}
 \begin{itemize}
- \item \textbf{Cuori «rotti»:} nessuno può \emph{aprire} una presa con un Cuore finché un Cuore non è stato giocato in una presa precedente (a meno che tu non abbia solo Cuori in mano).
- \item \textbf{Prima presa:} se possibile, niente Cuori né Donna di Picche (non si «sporcano» le mani appena cominciato).
- \item La \textbf{Donna di Picche} dopo la prima presa può essere giocata in qualsiasi momento, anche per aprire una presa. 
+ \item Non puoi \textbf{aprire con un Cuore} finché qualcuno non ha giocato un Cuore in una presa precedente, salvo che tu abbia solo Cuori. Da quel momento i Cuori sono «rotti».
+ \item In questa versione, la sola \textbf{Donna di Picche non rompe i Cuori}.
+ \item Dopo la prima presa, puoi aprire con la Donna di Picche; per scartarla su un altro seme devi però \textbf{non poter rispondere} a quel seme.
 \end{itemize}
+\secz{Punti e Luna}
+Dopo le 13 prese contate \textbf{1 per ogni Cuore e 13 per la Q\sS{}}. Senza Luna, il totale fra tutti deve essere \textbf{26}.
 
-\secz{Finita la mano}
-Dopo le 13 prese, ognuno conta i punti raccolti: \textbf{1 per ogni Cuore}, \textbf{13 per la Donna di Picche}. Controllo: i punti di tutti devono fare \textbf{26} in totale.
-
-\secz{La Luna (\emph{shooting the moon})}
-Se un giocatore prende \textbf{tutti i Cuori e la Donna di Picche}, sbanca la mano: lui fa \textbf{0 punti} e ciascuno degli altri tre fa \textbf{26 punti}.
+Se qualcuno prende \textbf{tutti i 13 Cuori e la Donna di Picche}, fa la \textbf{Luna}: segna 0, gli altri tre segnano 26 ciascuno. In questo caso il totale assegnato è \textbf{78}, non 26.
 
 \startpage
 \secz{Fine della partita}
-Si gioca mano dopo mano finché qualcuno raggiunge o supera \textbf{100 punti}: a quel punto vince chi ha \textbf{meno punti}.
-
+Alla fine di ogni mano aggiungete le penalità ai totali precedenti. Se qualcuno raggiunge o supera \textbf{100 punti}, la partita finisce: vince chi ha \textbf{meno punti}. In caso di pari punteggio minimo, la vittoria è condivisa.
 \secz{Esempio di punteggio}
-\begin{center}\small\renewcommand{\arraystretch}{1.3}
-\begin{tabular}{@{}lcccc@{}}
- \rowcolor{tint}& \textbf{Anna} & \textbf{Bruno} & \textbf{Carla} & \textbf{Dario}\\
- Mano 1 & 4 & 13 & 8 & 1 \\
- Mano 2 & 0 & 7 & 6 & 13 \\
- Mano 3 & 12 & 0 & 14 & 0 \\
- \hline
- \textbf{Totale} & \textbf{16} & \textbf{20} & \textbf{28} & \textbf{14}\\
+\begin{center}\small\setlength{\tabcolsep}{2.5mm}\renewcommand{\arraystretch}{1.45}
+\begin{tabular}{@{}lrrrr@{}}
+\rowcolor{tint}& \textbf{Anna} & \textbf{Bruno} & \textbf{Carla} & \textbf{Dario}\\
+Mano 1 & 4 & 13 & 8 & 1\\
+Mano 2 & 0 & 7 & 6 & 13\\
+Mano 3 & 12 & 0 & 14 & 0\\\hline
+\textbf{Totale} & \textbf{16} & \textbf{20} & \textbf{28} & \textbf{14}\\
 \end{tabular}
 \end{center}
-Ogni riga fa 26. Al momento Dario (14 punti) è in testa, ma la partita è ancora lunga.
-
-\secz{In tre?}
-Togliete dal mazzo il \textbf{2 di Quadri}, date \textbf{17 carte} a testa e giocate come sempre. Chi ha il 2 di Fiori comincia.
-
+Qui non ci sono Lune: ogni mano somma 26. Dario è in testa con 14.
+\secz{In tre? Ecco cosa cambia}
+\begin{itemize}
+ \item Togliete il \textbf{2 di Quadri}: restano 51 carte. Distribuitene \textbf{17 a testa} e giocate \textbf{17 prese}.
+ \item Passate tre carte a \textbf{sinistra}, poi a \textbf{destra}, poi \textbf{nessuna}; ripetete questo ciclo di tre mani.
+ \item Parte sempre il \textbf{2 di Fiori}. Le altre regole non cambiano.
+ \item Con la Luna, chi la fa segna 0 e gli altri \textbf{due} segnano 26: totale 52. Senza Luna il totale resta 26.
+\end{itemize}
 \secz{Consigli per cominciare}
 \begin{itemize}
- \item Nel passaggio, \textbf{liberati delle carte alte}: Asso, Re e Donna di Picche, Cuori alti.
- \item Le \textbf{carte basse sono amiche}: ti fanno perdere le prese, e perdere le prese è l’obiettivo.
- \item Se non hai il seme richiesto, è il momento di scaricare la Donna di Picche o i Cuori più alti.
- \item Tieni d’occhio la Donna di Picche: chi la prende, di solito, non ride.
+ \item Nel passaggio, cerca di \textbf{svuotare un seme}: potrai scartare penalità quando quel seme viene aperto, salvo i vincoli della prima presa.
+ \item Tieni qualche carta bassa per evitare le prese pericolose. Non tutte le prese fanno male: quelle senza penalità valgono zero.
+ \item Segui la Donna di Picche e guarda se qualcuno raccoglie tutti i Cuori: potrebbe tentare la Luna.
 \end{itemize}
 \vfill
-\ettore{Prendere \textbf{qualche} punto è inevitabile: il problema è prenderne troppi. E se un amico ha già molti punti, non infierite… troppo.}
+\ettore{Non basta perdere una presa: bisogna perdere quella giusta. Prima di giocare una carta alta, guarda quanti Cuori sono già sul tavolo.}
 
-%% ------------------------------------------------------------
-%% 17–18 · BONUS RAMINO
-%% ------------------------------------------------------------
-\startpage
-\gameheader{EXTRA}{RAMINO}{Bonus a due mazzi: il capostipite di tutti i Rummy}{2–5 giocatori}{30 minuti}{2}{ettore}
+%% 18–19 · BONUS RAMINO
+\startpage\label{ramino}
+\gameheader{BONUS}{RAMINO}{Una variante semplice, con due mazzi e quattro jolly}{2–5 giocatori}{30–45 minuti}{2}{ettore}
 \begin{callout}
-\textbf{$\Huge{\star}$ Gioco bonus: servono due mazzi!} Chiedete a un altro tavolo (o a un amico con un mazzo come il vostro) di unire le forze: mescolate insieme i due mazzi, \emph{compresi i 4 jolly}. Più mazzi, più divertimento.
+{\suitfont\color{golddk}★}\quad\textbf{Servono due mazzi!} Chiedete a un altro tavolo di unirsi: mescolate insieme i due mazzi, \textbf{compresi i 4 jolly}.
 \end{callout}
-\textbf{L’idea.} Il Ramino è il capostipite dei giochi di «combinazioni»: già diffuso nei primi del Novecento, da lui discende il Gin Rummy che avete appena imparato. Il gioco è semplice: formare tris e scale e liberarsi per primi di tutte le carte.
-
+\textbf{L’idea.} Formare tris e scale e posarli sul tavolo: questo si chiama \textbf{calare}. Vinci la mano se riesci a restare senza carte. Il Ramino appartiene alla stessa famiglia del Gin, ma qui le combinazioni possono andare sul tavolo durante la mano. Questa è la nostra \textbf{variante semplificata}.
 \secz{Preparazione}
-Due mazzi da 52 carte più i \textbf{4 jolly} (108 carte in tutto), mescolati insieme. Da \textbf{2 a 5 giocatori}. Il mazziere dà \textbf{13 carte} a testa. La carta successiva si gira scoperta: è l’inizio degli scarti; il resto è il mazzo di pesca.
+\textbf{108 carte}: due mazzi da 52 più quattro jolly. Da 2 a 5 giocatori, \textbf{13 carte a testa}, da tenere nascoste agli altri. Il mazziere viene scelto a sorte e cambia a ogni mano, passando a sinistra. Comincia chi è alla sua sinistra; si procede in senso orario.
 
+Girate una carta per iniziare gli \textbf{scarti}. Se è un jolly, cercate una carta diversa e poi rimescolate i jolly nel mazzo coperto rimasto: sarà il \textbf{mazzo di pesca}.
 \secz{Le combinazioni}
 \begin{itemize}
- \item \textbf{Tris o poker:} 3 o 4 carte dello stesso valore, \emph{di semi diversi}.
- \item \textbf{Scala:} almeno 3 carte \emph{dello stesso seme} in sequenza. L’Asso può stare all'inizio (A-2-3) o alla fine (Q-K-A), ma non «girare l’angolo» (K-A-2 non vale).
- \item \textbf{Il jolly} può sostituire una qualsiasi carta, ma non più di uno per combinazione.
+ \item \textbf{Tris o poker:} 3 o 4 carte dello stesso valore, di \textbf{semi distinti}. Due 9 di Picche non possono stare nello stesso gruppo.
+ \item \textbf{Scala:} almeno 3 carte dello stesso seme in sequenza. Asso all’inizio (A-2-3) o alla fine (Q-K-A); K-A-2 non vale.
+ \item \textbf{Jolly:} sostituisce una carta; massimo \textbf{uno per combinazione}. Dichiarate quale carta rappresenta.
 \end{itemize}
 \begin{center}
-\begin{tabular}{@{}c@{\hspace{10mm}}c@{}}
- \hand{9/S,9/H,9/D} & \hand{4/C,5/C,JK/Z,7/C}\\[1mm]
- {\footnotesize\textbf{Tris di 9} (semi diversi)} & {\footnotesize\textbf{Scala:} il jolly fa da 6 di Fiori}
-\end{tabular}
+\examplecell{52mm}{\hand{9/S,9/H,9/D}}{\textbf{Tris di 9}, semi distinti}\hfill
+\examplecell{58mm}{\hand{4/C,5/C,JK/Z,7/C}}{\textbf{Scala}: il jolly è il 6\sC{}}
 \end{center}
 
 \startpage
 \secz{Un turno}
 \begin{enumerate}
- \item \textbf{Pesca} una carta: la prima del mazzo \emph{oppure} la prima degli scarti.
- \item \textbf{Cala} (se vuoi) una o più combinazioni, scoperte sul tavolo.
- \item \textbf{Attacca}: se hai già calato almeno una combinazione, puoi aggiungere carte a \emph{qualsiasi} combinazione sul tavolo, tua o altrui (un 6 a una scala 7-8-9 dello stesso seme, un quarto 9 a un tris di 9…).
- \item \textbf{Scarta} una carta, scoperta.
+ \item \textbf{Pesca}: aggiungi alla tua mano una carta, scegliendo fra la prima del mazzo coperto e quella in cima agli scarti.
+ \item \textbf{Cala}, se vuoi: posa davanti a te un tris, un poker o una scala, così tutti li vedono. Puoi posarne più di uno. \textbf{Non serve un minimo di punti}.
+ \item Se hai già calato, anche in questo turno, puoi \textbf{attaccare} carte alle combinazioni tue o altrui, mantenendole valide: un 6\sC{} alla scala 7-8-9\sC{}, o il quarto seme a un tris. I gruppi non superano quattro carte.
+ \item \textbf{Scarta}: metti una delle tue carte sopra gli scarti, \textbf{se non hai già chiuso}; non quella appena presa dagli scarti. Poi tocca al giocatore alla tua sinistra.
 \end{enumerate}
-
-\secz{Chiudere}
-Chi riesce a liberarsi di tutte le carte (calandole, attaccandole o scartando l’ultima) \textbf{chiude} la mano: gli altri contano i punti rimasti nella loro mano.
-
-\secz{Punti in carta}
-\begin{center}\small\renewcommand{\arraystretch}{1.2}
-\begin{tabular}{@{}ll@{}}
- \rowcolor{tint}\textbf{Carta} & \textbf{Punti}\\
- Dal 2 al 10 & il loro numero\\
- Fante, Donna, Re & 10\\
- Asso & 11\\
- Jolly & 20\\
+\secz{Chiudere e contare}
+Chi resta senza carte, calandole, attaccandole o scartando l’ultima, \textbf{chiude e segna 0}. In questa variante \textbf{si può chiudere senza scarto}. Gli altri contano solo le carte rimaste in mano:
+\begin{center}\small\setlength{\tabcolsep}{3mm}\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{@{}m{45mm}C{25mm}@{}}
+\rowcolor{tint}\textbf{Carta} & \textbf{Punti}\\
+Dal 2 al 10 & il loro numero\\
+Fante, Donna, Re & 10\\
+Asso & 11\\
+Jolly & 20\\
 \end{tabular}
 \end{center}
-Chi chiude fa \textbf{0}; gli altri sommano i punti delle carte rimaste. Giocate \textbf{3 mani} e sommate: vince chi ha il punteggio \emph{più basso}.
-
-\secz{Regole di dettaglio}
+Giocate \textbf{tre mani} e sommate le penalità: vince il totale \textbf{più basso}. In caso di parità, vittoria condivisa.
+\secz{Regole della nostra variante}
 \begin{itemize}
- \item Se il mazzo di pesca finisce, rimescolate gli scarti (tranne l’ultimo) e proseguite.
- \item Non c’è un minimo di punti per calare: potete aprire subito con un tris da tre carte.
- \item \textbf{Per le serate più tattiche:} chiedete un minimo di 30 punti (somma dei valori) per la prima calata.
+ \item I jolly già calati \textbf{non si recuperano}; non si smontano né si riordinano le combinazioni sul tavolo.
+ \item Se il mazzo finisce, rimescolate gli scarti tranne l’ultimo. Se non ci sono carte da rimescolare, chi è di turno può prendere l’ultimo scarto; se non vuole, la mano finisce e \textbf{tutti contano le carte rimaste}, senza un vincitore di mano.
 \end{itemize}
-
-\secz{Il consiglio per i principianti}
-Non sciupate i jolly: usateli per completare una scala difficile, non per il primo tris che capita. E guardate bene cosa scartano gli altri: ogni carta buttata dice qualcosa su ciò che manca (o non manca) nella loro mano.
 \vfill
-\enea{Se giocate in quattro o cinque, cercate di \textbf{calare presto}: vi dà la possibilità di attaccare le carte sul tavolo e scaricare la mano. Se aspettate troppo, rischiate di restare con tanti punti in mano.}
+\enea{Hai 4 e 5 di Fiori e peschi il 6? \textbf{Cala 4-5-6}. Se hai anche l’8 di Cuori e sul tavolo c’è 9-10-J di Cuori, \textbf{aggiungi l’8}. Poi scarta una carta: ora tocca al prossimo.}
 
-%% ------------------------------------------------------------
-%% 19 · GALATEO E SEGNAPUNTI
-%% ------------------------------------------------------------
-\startpage
+%% 20 · GALATEO E SEGNAPUNTI
+\startpage\label{segnapunti}
 \bigtitle{Il galateo del tavolo}{poche regole d’oro per giocare da signori}
 \begin{itemize}
- \item \textbf{Chi dà le carte, mescola;} chi sta alla sua destra, alza.
+ \item \textbf{Il mazziere mescola;} chi sta alla sua destra alza.
  \item \textbf{Mai sbirciare} le carte altrui. Neppure «per sbaglio».
- \item \textbf{Si vince con modestia} e si perde con eleganza: una battuta brillante vale più delle fiches.
- \item \textbf{Il banco ruota,} perché tutti meritano il proprio turno.
- \item \textbf{Si gioca per gioco:} niente soldi, solo gloria e un brindisi.
+ \item \textbf{Si vince con modestia e si perde con eleganza.}
+ \item Nel Ventuno \textbf{il banco ruota}; negli altri giochi seguite la rotazione del mazziere indicata nella scheda.
+ \item \textbf{Niente soldi}: solo gloria, fiches e un brindisi.
 \end{itemize}
 \secz{Per i più coraggiosi: il Bridge}
-Nel \textbf{novembre 1925}, durante una crociera, Harold Stirling Vanderbilt mise a punto le regole del \emph{Contract Bridge}: un gioco a coppie, per quattro giocatori, con una fase iniziale di licitazione dove i compagni si scambiano informazioni con un codice tutto loro. Divenne in pochi anni una mania mondiale. Non vi spieghiamo le regole qui: se vi sentite abbastanza temerari, cercatele a fine serata.
-
+Nel \textbf{1925}, durante una crociera, Harold Stirling Vanderbilt mise a punto il \emph{Contract Bridge}. Si gioca in quattro, a coppie: nella licitazione i compagni descrivono la propria mano con \textbf{dichiarazioni regolamentate e accordi noti anche agli avversari}. Divenne presto una mania mondiale. Le regole? Se vi sentite temerari, cercatele a fine serata!
 \secz{Segnapunti}
-\renewcommand{\arraystretch}{1}
-\arrayrulecolor{gold}
-\begin{center}\small
-\begin{tabular}{|>{\centering\arraybackslash}m{14mm}|>{\centering\arraybackslash}m{20mm}|>{\centering\arraybackslash}m{20mm}|>{\centering\arraybackslash}m{20mm}|>{\centering\arraybackslash}m{20mm}|}
- \hline
- \rowcolor{tint}\rule{0pt}{6mm}{\decob\bfseries Mano} & {\scriptsize\itshape nome} & {\scriptsize\itshape nome} & {\scriptsize\itshape nome} & {\scriptsize\itshape nome}\\ \hline
- \rule{0pt}{6.5mm}1 & & & & \\ \hline
- \rule{0pt}{6.5mm}2 & & & & \\ \hline
- \rule{0pt}{6.5mm}3 & & & & \\ \hline
- \rule{0pt}{6.5mm}4 & & & & \\ \hline
- \rule{0pt}{6.5mm}5 & & & & \\ \hline
- \rule{0pt}{6.5mm}6 & & & & \\ \hline
- \rule{0pt}{6.5mm}7 & & & & \\ \hline
- \rowcolor{tint}\rule{0pt}{7mm}{\decob\bfseries Totale} & & & & \\ \hline
+\begin{center}\small\arrayrulecolor{gold}\setlength{\tabcolsep}{0pt}
+\renewcommand{\arraystretch}{2.05}
+\begin{tabular}{|C{18mm}|C{24mm}|C{24mm}|C{24mm}|C{24mm}|}
+\hline
+\rowcolor{tint}\textbf{Mano} & \textbf{Nome} & \textbf{Nome} & \textbf{Nome} & \textbf{Nome}\\\hline
+1 & & & &\\\hline
+2 & & & &\\\hline
+3 & & & &\\\hline
+4 & & & &\\\hline
+5 & & & &\\\hline
+6 & & & &\\\hline
+7 & & & &\\\hline
+\rowcolor{tint}\textbf{Totale} & & & &\\\hline
 \end{tabular}
 \end{center}
 \vfill
-\begin{center}\itshape\small\color{golddk}Il mazzo è vostro. Portatelo a casa e continuate a giocare: ai prossimi vent’anni!\end{center}
+\begin{center}\itshape\small\color{golddk}La serata finisce, la voglia di giocare no: ai prossimi vent’anni!\end{center}
+%% ------------------------------------------------------------
+%% 21–22 · SEGNAPUNTI AGGIUNTIVI
+%% ------------------------------------------------------------
+\scoresheet{4}{quattro amici, dodici mani, una nuova sfida}
+\scoresheet{6}{un tavolo più grande, fino a sei giocatori}
 
 %% ------------------------------------------------------------
-%% 20 · RETROCOPERTINA
+%% 23 · APPUNTI E REGOLE DEL TAVOLO
+%% ------------------------------------------------------------
+\startpage\label{appunti}
+\bigtitle{Appunti del salotto}{regole del tavolo, idee e colpi di genio}
+Prima di distribuire, annotate le varianti concordate. Qui c’è spazio anche per una strategia da ricordare o una battuta riuscita.
+\secz{Le regole del nostro tavolo}
+\writinglines{5}{10}
+\vspace{3mm}
+\secz{Da ricordare}
+\writinglines{7}{10}
+\vfill
+\begin{center}\itshape\small\color{golddk}Le idee migliori nascono intorno a un tavolo.\end{center}
+
+%% ------------------------------------------------------------
+%% 24 · RETROCOPERTINA
 %% ------------------------------------------------------------
 \startpage[dark]
 \begin{tikzpicture}[remember picture,overlay]
@@ -593,7 +571,7 @@ Nel \textbf{novembre 1925}, durante una crociera, Harold Stirling Vanderbilt mis
  \draw[gold,line width=.4pt] ([xshift=-30mm,yshift=-153mm]current page.north) -- ([xshift=-3mm,yshift=-153mm]current page.north);
  \draw[gold,line width=.4pt] ([xshift=3mm,yshift=-153mm]current page.north) -- ([xshift=30mm,yshift=-153mm]current page.north);
  \node[diamond,fill=gold,inner sep=1.3pt] at ([yshift=-153mm]current page.north) {};
- \node[text=gold,font=\deco\fontsize{9}{13}\selectfont,align=center] at ([yshift=-168mm]current page.north)
+ \node[text=gold,font=\decob\fontsize{9}{13}\selectfont,align=center] at ([yshift=-168mm]current page.north)
    {SABATO 21 NOVEMBRE · 24ORE, MODENA\\[1mm]20 ANNI DI ESN MORE · GALA ANNI ’20};
  \node[text=cream!70!ink,font=\footnotesize,align=center] at ([yshift=22mm]current page.south)
    {Erasmus Student Network · Modena e Reggio Emilia\\\scriptsize Fate il vostro gioco... e che vinca il migliore.};

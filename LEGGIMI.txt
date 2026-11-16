@@ -1,4 +1,4 @@
-FATE IL VOSTRO GIOCO – Piccolo manuale di carte (ESN Modena e Reggio Emilia)
+IL SALOTTO DI ENEA ED ETTORE – Piccolo manuale di carte (ESN Modena e Reggio Emilia)
 ===========================================================================
 
 FILE
@@ -12,21 +12,30 @@ COME COMPILARE
   Serve XeLaTeX (NON pdfLaTeX). Compilare DUE volte:
       xelatex main.tex
       xelatex main.tex
+  Per la versione da stampare, compilare poi:
+      xelatex imposizione.tex
   Su Overleaf: caricare tutta la cartella, Menu > Compiler > XeLaTeX.
 
 COME STAMPARE
-  1) main.pdf = 20 pagine A5, in ordine di lettura (per leggere a schermo o
+  1) main.pdf = 24 pagine A5, in ordine di lettura (per leggere a schermo o
      stampare una pagina per foglio).
-  2) libretto_stampa_A4.pdf = 10 facciate A4 orizzontali già impaginate:
+  2) imposizione.pdf = 12 facciate A4 orizzontali (6 fogli) già impaginate:
      stampare FRONTE-RETRO, "rilegatura sul lato corto" (flip on short edge),
      scala 100% (senza "adatta alla pagina"). Piegare a metà e pinzare: si
-     ottiene un libretto A5 da 20 pagine.
+     ottiene un libretto A5 da 24 pagine, senza pagine bianche aggiunte.
   3) Le copertine hanno fondo nero a tutta pagina: una stampante da ufficio
      lascerà un bordo bianco. Per un risultato perfetto rivolgersi a una
-     copisteria/tipografia (chiedere abbondanza di 3 mm: basta ingrandire le
-     immagini di sfondo in stile.tex).
+     copisteria/tipografia. Se richiede abbondanza di 3 mm, preparare una
+     versione dedicata con formato pagina maggiorato, area di taglio e
+     sfondi estesi: il PDF A5 attuale non include abbondanza.
 
 COSE FACILI DA MODIFICARE
+  - Le schede adottano varianti semplificate dichiarate, senza denaro reale.
+  - L’indice usa riferimenti di pagina: servono sempre due passate.
+  - Pagine 21–22: segnapunti aggiuntivi per 4 e 6 giocatori (12 mani).
+    Pagina 23: appunti, regole del tavolo e strategie.
+  - L’ordine in imposizione.tex è specifico per 24 pagine: se cambia il
+    numero totale di pagine, aggiornare anche l’imposizione.
   - Testi e regole: main.tex. Ogni gioco è una sezione commentata (%% 5 · ...).
   - Data/luogo: copertina (inizio di main.tex) e retrocopertina (fine).
   - Colori: righe \definecolor in stile.tex.
@@ -36,3 +45,9 @@ COSE FACILI DA MODIFICARE
   - Attenzione: ogni gioco è impaginato per stare in un numero preciso di
     pagine. Se allungate un testo e una pagina "trabocca", accorciate qualcosa
     o usate \startpage per forzare il passaggio a una nuova pagina.
+
+ALTERNATIVA CON TECTONIC
+  Tectonic usa il motore XeTeX e gestisce automaticamente le passate:
+      tectonic main.tex
+      tectonic imposizione.tex
+  Al primo avvio richiede rete per i pacchetti TeX.

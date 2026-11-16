@@ -1,10 +1,11 @@
 %% ============================================================
-%%  STILE GRAFICO – "Fate il vostro gioco"
+%%  STILE GRAFICO – «Il salotto di Enea ed Ettore»
 %%  Tutto ciò che riguarda aspetto, colori, font, carte e riquadri.
 %%  Per cambiare la grafica basta toccare questo file.
 %% ============================================================
 
 % ---------- Pagina ----------
+\usepackage{fix-cm}
 \usepackage[paperwidth=148mm,paperheight=210mm,
             left=14mm,right=14mm,top=13mm,bottom=18mm]{geometry}
 \usepackage{polyglossia}
@@ -39,9 +40,53 @@
 \setmainfont{JosefinSans}[Path=./fonts/,Extension=.ttf,
   UprightFont=*-Regular,BoldFont=*-Bold,ItalicFont=*-Italic,BoldItalicFont=*-BoldItalic]
 \newfontfamily\deco{PoiretOne-Regular.ttf}[Path=./fonts/]
-\newfontfamily\decob{PoiretOne-Regular.ttf}[Path=./fonts/,AutoFakeBold=3]
+\newfontfamily\decob{PoiretOne-Regular.ttf}[Path=./fonts/,AutoFakeBold=3,
+  ItalicFont=PoiretOne-Regular.ttf,BoldItalicFont=PoiretOne-Regular.ttf]
 \newfontfamily\suitfont{DejaVuSans.ttf}[Path=./fonts/,BoldFont=DejaVuSans-Bold.ttf]
 \newcommand{\corpo}{\fontsize{8.9}{12.2}\selectfont\color{txt}}
+% Celle ed esempi: dimensioni condivise, contenuto centrato su entrambi gli assi.
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+\newcommand{\examplecell}[3]{\begin{minipage}[t]{#1}\centering
+  \vspace{0pt}\makebox[\linewidth][c]{\raisebox{0pt}[19mm][0pt]{#2}}%
+  \par\vspace{1.2mm}{\footnotesize #3}\end{minipage}}
+\newcommand{\cardref}[2]{\mbox{#1\,#2}}
+\newcommand{\headerdiamond}{\tikz[baseline=-.05ex]{\fill[gold]
+  (0,.5ex)--(.5ex,1ex)--(1ex,.5ex)--(.5ex,0)--cycle;}}
+
+% Pagine da compilare a mano: la stessa griglia per quattro o sei giocatori.
+\newcommand{\scoresheet}[2]{%
+ \startpage\label{segnapunti-#1}
+ \bigtitle{Segnapunti}{#2}
+ \vspace{3mm}
+ Gioco: \rule{48mm}{.3pt}\hfill Tavolo: \rule{29mm}{.3pt}\par
+ \vspace{3mm}
+ {\footnotesize Scrivete i nomi e segnate il risultato di ogni mano.}
+ \begin{center}
+ \begin{tikzpicture}[x=1mm,y=1mm,font=\small]
+  \fill[tint] (0,0) rectangle (114,-8);
+  \fill[tint] (0,-104) rectangle (114,-112);
+  \foreach \y in {0,-8,...,-112}{
+   \draw[gold,line width=.4pt] (0,\y)--(114,\y);}
+  \draw[gold,line width=.4pt] (0,0)--(0,-112) (18,0)--(18,-112);
+  \foreach \i in {1,...,#1}{
+   \draw[gold,line width=.4pt] ({18+96*\i/#1},0)--({18+96*\i/#1},-112);
+   \node at ({18+96*(\i-.5)/#1},-4) {Nome};}
+  \node[font=\small\bfseries] at (9,-4) {Mano};
+  \foreach \i in {1,...,12}{\node at (9,{-4-8*\i}) {\i};}
+  \node[font=\small\bfseries] at (9,-108) {Totale};
+ \end{tikzpicture}
+ \end{center}
+ \vfill
+ \begin{center}\itshape\small\color{golddk}
+ Una partita in più, un’altra storia da raccontare.
+ \end{center}}
+
+\newcommand{\writinglines}[2]{%
+ \par\noindent\begin{tikzpicture}[x=1mm,y=1mm]
+  \useasboundingbox (0,0) rectangle (120,{-#1*#2});
+  \foreach \k in {1,...,#1}{%
+   \draw[gold!55!paper,line width=.35pt] (.2,{-\k*#2})--(119.8,{-\k*#2});}
+ \end{tikzpicture}\par}
 
 % ---------- Sfondi di pagina ----------
 \gdef\pagetype{cream}
@@ -70,11 +115,12 @@
   \decoframe{6mm}{3.5mm}{gold}{.7pt}
   \decoframe{7.6mm}{3.5mm}{gold}{.3pt}
   \framecorners{6mm}{gold}
-  % numero di pagina in un rombo
-  \node[diamond,draw=gold,fill=ink,line width=.5pt,inner sep=1.1pt,
-        text=cream,font=\decob\bfseries\small] at (\paperwidth/2,10.5mm) {\thepage};
-  \draw[gold,line width=.4pt] (\paperwidth/2-18mm,10.5mm) -- (\paperwidth/2-5.5mm,10.5mm);
-  \draw[gold,line width=.4pt] (\paperwidth/2+5.5mm,10.5mm) -- (\paperwidth/2+18mm,10.5mm);
+  % numero di pagina in un rombo di misura fissa (una o due cifre):
+  % la punta inferiore resta sopra il filetto interno della cornice (7,6 mm)
+  \node[diamond,draw=gold,fill=ink,line width=.5pt,inner sep=0pt,minimum size=6.4mm,
+        text=cream,font=\small,text height=1.5ex,text depth=.2ex] at (\paperwidth/2,11.6mm) {\thepage};
+  \draw[gold,line width=.4pt] (\paperwidth/2-18mm,11.6mm) -- (\paperwidth/2-5.5mm,11.6mm);
+  \draw[gold,line width=.4pt] (\paperwidth/2+5.5mm,11.6mm) -- (\paperwidth/2+18mm,11.6mm);
  \end{tikzpicture}}
 \newcommand{\bgdark}{%
  \begin{tikzpicture}
@@ -84,10 +130,13 @@
   \decoframe{7.8mm}{3.5mm}{gold}{.3pt}
   \framecorners{6mm}{gold}
  \end{tikzpicture}}
+% L'immagine è un nodo dentro la stessa tikzpicture: prima la cornice
+% veniva disegnata dopo l'immagine, cioè fuori dal foglio, e non si vedeva.
 \newcommand{\bgcover}{%
- \includegraphics[width=\paperwidth,height=\paperheight]{img/cover_bg.png}%
- \begin{tikzpicture}[overlay]
+ \begin{tikzpicture}
   \useasboundingbox (0,0) rectangle (\paperwidth,\paperheight);
+  \node[anchor=south west,inner sep=0pt,outer sep=0pt] at (0,0)
+    {\includegraphics[width=\paperwidth,height=\paperheight]{img/cover_bg.png}};
   \decoframe{6mm}{3.5mm}{gold}{.8pt}
   \decoframe{7.8mm}{3.5mm}{gold}{.3pt}
   \framecorners{6mm}{gold}
@@ -96,7 +145,15 @@
   \csname bg\pagetype\endcsname}}
 
 % ---------- Intestazione di gioco (fascia scura a tutta pagina) ----------
-\newcommand{\diffd}[1]{{\suitfont\color{gold}\foreach \k in {1,...,5}{\ifnum\k>#1 ◇\else ◆\fi}}}
+\newcommand{\diffd}[1]{\tikz[baseline=-.05ex]{%
+  \foreach \k in {1,...,5}{\ifnum\k>#1\def\dfill{none}\else\def\dfill{gold}\fi
+    \path[draw=gold,fill=\dfill,line width=.35pt]
+      ({(\k-1)*1.8ex},.7ex)--++(.7ex,.7ex)--++(.7ex,-.7ex)--++(-.7ex,-.7ex)--cycle;}}}
+% Centra ogni elemento sulla sua altezza effettiva, indipendentemente dal font.
+\newcommand{\headmid}[2][0pt]{\begingroup
+ \setbox0=\hbox{#2}%
+ \raisebox{\dimexpr(\dp0-\ht0)/2+#1\relax}{\box0}%
+ \endgroup}
 \newcommand{\gameheader}[7]{% num, TITOLO, sottotitolo, giocatori, durata, difficoltà, mascotte
 \begin{tikzpicture}[remember picture,overlay]
  \fill[ink] (current page.north west) rectangle ([yshift=-47mm]current page.north east);
@@ -108,14 +165,23 @@
  \begin{scope}[shift={(current page.north east)}]
   \cornerfan{0}{0}{180}{gold!55!ink}
  \end{scope}
- \node[anchor=north west,text=gold,font=\decob\bfseries\footnotesize,inner sep=0] at ([xshift=14mm,yshift=-7mm]current page.north west)
-   {\MakeUppercase{N°}~#1\ \raisebox{.1ex}{\suitfont\tiny ◆}\ \MakeUppercase{#4}};
+ \node[anchor=base west,text=gold,font=\decob\bfseries\footnotesize,inner sep=0] at ([xshift=14mm,yshift=-8.5mm]current page.north west)
+   {\headmid{\ifstrequal{#1}{BONUS}{BONUS}{N°~#1}}%
+    \hspace{1.5mm}\headmid[.32mm]{\headerdiamond}\hspace{1.5mm}\headmid{\MakeUppercase{#4}}};
  \node[anchor=north west,text=gold,font=\decob\bfseries\fontsize{30}{32}\selectfont,inner sep=0] at ([xshift=14mm,yshift=-11mm]current page.north west)
    {#2};
  \node[anchor=north west,text=cream,font=\itshape\small,inner sep=0] at ([xshift=14mm,yshift=-22mm]current page.north west)
    {#3};
- \node[anchor=north west,text=cream,font=\footnotesize,inner sep=0,align=left] at ([xshift=14mm,yshift=-29.5mm]current page.north west)
-   {{\decob\bfseries\color{gold}DURATA}\quad #5\\[1.2mm]{\decob\bfseries\color{gold}DIFFICOLTÀ}\quad \diffd{#6}};
+ % Centro verticale comune, con correzioni ottiche per l’inchiostro visibile
+ % di Poiret/Josefin e dei simboli (verificate sul PDF renderizzato).
+ \node[anchor=base west,text=gold,font=\decob\bfseries\footnotesize,inner sep=0]
+   at ([xshift=14mm,yshift=-31mm]current page.north west) {\headmid{DURATA}};
+ \node[anchor=base west,text=cream,font=\footnotesize,inner sep=0]
+   at ([xshift=32mm,yshift=-31mm]current page.north west) {\headmid[.16mm]{#5}};
+ \node[anchor=base west,text=gold,font=\decob\bfseries\footnotesize,inner sep=0]
+   at ([xshift=14mm,yshift=-35.5mm]current page.north west) {\headmid{DIFFICOLTÀ}};
+ \node[anchor=base west,text=gold,font=\footnotesize,inner sep=0]
+   at ([xshift=32mm,yshift=-35.5mm]current page.north west) {\headmid[.53mm]{\diffd{#6}}};
  \node[circle,fill=ink,inner sep=0] at ([xshift=-26mm,yshift=-33mm]current page.north east)
    {\includegraphics[width=32mm]{img/#7.png}};
 \end{tikzpicture}\vspace*{37mm}\par\nopagebreak}

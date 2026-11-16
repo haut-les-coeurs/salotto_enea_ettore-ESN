@@ -1,7 +1,11 @@
-% Impagina main.pdf (20 pagine A5) a libretto su fogli A4 orizzontali.
+% Impagina main.pdf (24 pagine A5) a libretto su fogli A4 orizzontali.
 % Compilare con:  xelatex imposizione.tex   (dopo aver generato main.pdf)
-\documentclass[a4paper]{article}
+\documentclass[a4paper,landscape]{article}
 \usepackage{pdfpages}
 \begin{document}
-\includepdf[pages=-,signature=20,landscape,paper=a4paper]{main.pdf}
+% Ordine esplicito per 6 fogli, fronte-retro sul lato corto.
+% Mantiene entrambe le pagine dritte su ogni facciata A4 orizzontale.
+% Questa imposizione è specifica per il libretto di 24 pagine.
+\includepdf[pages={24,1,2,23,22,3,4,21,20,5,6,19,18,7,8,17,16,9,10,15,14,11,12,13},
+            nup=2x1,noautoscale=true]{main.pdf}
 \end{document}
