@@ -968,4 +968,178 @@ LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/JosefinSans(0)/m/n --> TU/JosefinSans(0)/b/n on inpu
 t line 10.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> TU/JosefinSans(0)/b/it on inpu
+(Font)                  OT1/cmr/bx/it --> TU/JosefinSans(0)/b/it on input line 
+10.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/b/n on input line 10.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 10.
+\c@lstlisting=\count355
+LaTeX Info: Redefining \microtypecontext on input line 10.
+Package microtype Info: Applying patch `item' on input line 10.
+Package microtype Info: Applying patch `toc' on input line 10.
+Package microtype Info: Applying patch `eqnum' on input line 10.
+Package microtype Info: Applying patch `footnote' on input line 10.
+Package microtype Info: Applying patch `verbatim' on input line 10.
+LaTeX Info: Redefining \microtypesetup on input line 10.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `JosefinSans' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `PoiretOne-Regular.ttf' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `DejaVuSans.ttf' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+File: img/cover_bg.png Graphic file (type bmp)
+<img/cover_bg.png>
+[1
+
+]
+File: img/duo.png Graphic file (type bmp)
+<img/duo.png>
+ [2
+
+]
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg)
+Overfull \hbox (2.89688pt too wide) in paragraph at lines 82--82
+ []|\TU/PoiretOne-Regular.ttf(1)/b/n/9 GIOCATORI[]| 
+ []
+
+
+Underfull \hbox (badness 1052) in paragraph at lines 82--82
+\TU/JosefinSans(0)/m/it/8 Quattro amici, una Donna di Picche da
+ []
+
+File: img/enea.png Graphic file (type bmp)
+<img/enea.png>
+LaTeX Font Info:    Calculating math sizes for size <8.9> on input line 93.
+
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.45> not available
+(Font)              size <5> substituted on input line 93.
+
+
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.45> not available
+(Font)              size <5> substituted on input line 93.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.45> not available
+(Font)              size <5> substituted on input line 93.
+
+[3
+
+]
+File: img/ettore.png Graphic file (type bmp)
+<img/ettore.png>
+ [4
+
+]
+File: img/enea.png Graphic file (type bmp)
+<img/enea.png>
+ [5
+
+]
+File: img/ettore.png Graphic file (type bmp)
+<img/ettore.png>
+ [6
+
+]
+File: img/enea.png Graphic file (type bmp)
+<img/enea.png>
+ [7
+
+]
+File: img/enea.png Graphic file (type bmp)
+<img/enea.png>
+ [8
+
+] [9
+
+]
+File: img/ettore.png Graphic file (type bmp)
+<img/ettore.png>
+ [10
+
+]
+File: img/ettore.png Graphic file (type bmp)
+<img/ettore.png>
+ [11
+
+]
+
+LaTeX Font Warning: Font shape `TU/PoiretOne-Regular.ttf(1)/b/it' undefined
+(Font)              using `TU/PoiretOne-Regular.ttf(1)/b/n' instead on input li
+ne 354.
+
+[12
+
+]
+File: img/ettore.png Graphic file (type bmp)
+<img/ettore.png>
+ [13
+
+]
+File: img/enea.png Graphic file (type bmp)
+<img/enea.png>
+ [14
+
+] [15
+
+]
+File: img/ettore.png Graphic file (type bmp)
+<img/ettore.png>
+ [16
+
+]
+File: img/ettore.png Graphic file (type bmp)
+<img/ettore.png>
+
+
+LaTeX Font Warning: Command \Huge invalid in math mode on input line 494.
+
+[17
+
+]
+File: img/enea.png Graphic file (type bmp)
+<img/enea.png>
+ [18
+
+] [19
+
+]
+File: img/ventanni.png Graphic file (type bmp)
+<img/ventanni.png>
+ [20
+
+] (main.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-03-20>
+ ***********
+
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.55pt have occurred.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 26294 strings out of 402807
+ 601981 string characters out of 5445134
+ 1309022 words of memory out of 5000000
+ 54759 multiletter control sequences out of 15000+600000
+ 633065 words of font info for 119 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 103i,12n,111p,1003b,927s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on main.pdf (20 pages).
