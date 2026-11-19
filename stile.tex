@@ -130,6 +130,26 @@
   \decoframe{7.8mm}{3.5mm}{gold}{.3pt}
   \framecorners{6mm}{gold}
  \end{tikzpicture}}
+
+% Cornice che sfuma verso il basso (solo copertina).
+% Argomenti: inset, smusso, colore, spessore, y_pieno, y_zero
+% y_pieno e y_zero sono in mm dal BORDO INFERIORE, senza unità:
+% sopra y_pieno la cornice è piena, sotto sfuma fino a sparire a y_zero.
+% Misure fisse per il formato A5 (148 x 210 mm).
+\newcommand{\fadeframe}[6]{%
+	\pgfmathsetmacro{\xl}{#1}\pgfmathsetmacro{\xr}{148-#1}%
+	\pgfmathsetmacro{\xls}{#1+#2}\pgfmathsetmacro{\xrs}{148-#1-#2}%
+	\pgfmathsetmacro{\yt}{210-#1}\pgfmathsetmacro{\ytop}{210-#1-#2}%
+	\pgfmathsetmacro{\ystep}{(210-2*#1-2*#2)/120}%
+	\draw[#3,line width=#4] (\xl mm,\ytop mm) -- (\xls mm,\yt mm) -- (\xrs mm,\yt mm) -- (\xr mm,\ytop mm);%
+	\foreach \i in {0,...,119}{%
+		\pgfmathsetmacro{\ya}{\ytop-\ystep*\i}%
+		\pgfmathsetmacro{\yb}{\ytop-\ystep*(\i+1)}%
+		\pgfmathsetmacro{\op}{max(0,min(1,((\ya+\yb)/2-#6)/(#5-#6)))}%
+		\draw[#3,line width=#4,opacity=\op] (\xl mm,\ya mm) -- (\xl mm,\yb mm);%
+		\draw[#3,line width=#4,opacity=\op] (\xr mm,\ya mm) -- (\xr mm,\yb mm);%
+}}
+
 % L'immagine è un nodo dentro la stessa tikzpicture: prima la cornice
 % veniva disegnata dopo l'immagine, cioè fuori dal foglio, e non si vedeva.
 \newcommand{\bgcover}{%
@@ -137,9 +157,10 @@
   \useasboundingbox (0,0) rectangle (\paperwidth,\paperheight);
   \node[anchor=south west,inner sep=0pt,outer sep=0pt] at (0,0)
     {\includegraphics[width=\paperwidth,height=\paperheight]{img/cover_bg.png}};
-  \decoframe{6mm}{3.5mm}{gold}{.8pt}
-  \decoframe{7.8mm}{3.5mm}{gold}{.3pt}
-  \framecorners{6mm}{gold}
+	\fadeframe{6}{3.5}{gold}{.8pt}{175}{120}
+	\fadeframe{7.8}{3.5}{gold}{.3pt}{175}{120}
+	\cornerfan{6mm}{\paperheight-6mm}{270}{gold}
+	\cornerfan{\paperwidth-6mm}{\paperheight-6mm}{180}{gold}
  \end{tikzpicture}}
 \AddToShipoutPictureBG{\AtPageLowerLeft{%
   \csname bg\pagetype\endcsname}}
