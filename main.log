@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.5) (preloaded format=xelatex 2026.11.14)  16 NOV 2026 22:03
+This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.5) (preloaded format=xelatex 2026.11.14)  19 NOV 2026 16:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1010,29 +1010,29 @@ File: img/duo.png Graphic file (type bmp)
 
 ]
 (C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg)
-Overfull \hbox (2.89688pt too wide) in paragraph at lines 82--82
+Overfull \hbox (2.89688pt too wide) in paragraph at lines 85--85
  []|\TU/PoiretOne-Regular.ttf(1)/b/n/9 GIOCATORI[]| 
  []
 
 
-Underfull \hbox (badness 1052) in paragraph at lines 82--82
+Underfull \hbox (badness 1052) in paragraph at lines 85--85
 \TU/JosefinSans(0)/m/it/8 Quattro amici, una Donna di Picche da
  []
 
 File: img/enea.png Graphic file (type bmp)
 <img/enea.png>
-LaTeX Font Info:    Calculating math sizes for size <8.9> on input line 93.
+LaTeX Font Info:    Calculating math sizes for size <8.9> on input line 96.
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.45> not available
-(Font)              size <5> substituted on input line 93.
+(Font)              size <5> substituted on input line 96.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.45> not available
-(Font)              size <5> substituted on input line 93.
+(Font)              size <5> substituted on input line 96.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.45> not available
-(Font)              size <5> substituted on input line 93.
+(Font)              size <5> substituted on input line 96.
 
 [3
 
@@ -1077,7 +1077,7 @@ File: img/ettore.png Graphic file (type bmp)
 
 LaTeX Font Warning: Font shape `TU/PoiretOne-Regular.ttf(1)/b/it' undefined
 (Font)              using `TU/PoiretOne-Regular.ttf(1)/b/n' instead on input li
-ne 354.
+ne 357.
 
 [12
 
@@ -1103,7 +1103,7 @@ File: img/ettore.png Graphic file (type bmp)
 <img/ettore.png>
 
 
-LaTeX Font Warning: Command \Huge invalid in math mode on input line 494.
+LaTeX Font Warning: Command \Huge invalid in math mode on input line 497.
 
 [17
 
@@ -1115,8 +1115,8 @@ File: img/enea.png Graphic file (type bmp)
 ] [19
 
 ]
-File: img/ventanni_new.png Graphic file (type bmp)
-<img/ventanni_new.png>
+File: img/ventanni_F.png Graphic file (type bmp)
+<img/ventanni_F.png>
  [20
 
 ] (main.aux)
@@ -1134,10 +1134,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 26294 strings out of 402807
- 602017 string characters out of 5445134
- 1309022 words of memory out of 5000000
- 54759 multiletter control sequences out of 15000+600000
+ 26295 strings out of 402807
+ 602015 string characters out of 5445134
+ 1310022 words of memory out of 5000000
+ 54760 multiletter control sequences out of 15000+600000
  633065 words of font info for 119 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  103i,12n,111p,1003b,927s stack positions out of 10000i,1000n,20000p,200000b,200000s
