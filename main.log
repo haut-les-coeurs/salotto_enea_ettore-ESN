@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.5) (preloaded format=xelatex 2026.11.14)  19 NOV 2026 17:27
+This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.5) (preloaded format=xelatex 2026.11.14)  19 NOV 2026 17:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1304,41 +1304,46 @@ File: img/ettore.png Graphic file (type bmp)
 <img/ettore.png>
  [7
 
-] [8]
+]
 File: img/enea.png Graphic file (type bmp)
 <img/enea.png>
- [9
+ [8
 
 ]
 File: img/enea.png Graphic file (type bmp)
 <img/enea.png>
- [10
+ [9
 
-] [11
+] [10
+
+]
+File: img/ettore.png Graphic file (type bmp)
+<img/ettore.png>
+ [11
 
 ]
 File: img/ettore.png Graphic file (type bmp)
 <img/ettore.png>
  [12
 
-]
-File: img/ettore.png Graphic file (type bmp)
-<img/ettore.png>
- [13
-
-] [14
+] [13
 
 ]
 File: img/ettore.png Graphic file (type bmp)
 <img/ettore.png>
- [15
+ [14
 
 ]
 File: img/enea.png Graphic file (type bmp)
 <img/enea.png>
- [16
+ [15
 
-] [17
+] [16
+
+]
+File: img/ettore.png Graphic file (type bmp)
+<img/ettore.png>
+ [17
 
 ]
 File: img/ettore.png Graphic file (type bmp)
@@ -1346,15 +1351,12 @@ File: img/ettore.png Graphic file (type bmp)
  [18
 
 ]
-File: img/ettore.png Graphic file (type bmp)
-<img/ettore.png>
+File: img/enea.png Graphic file (type bmp)
+<img/enea.png>
 
 [19
 
-]
-File: img/enea.png Graphic file (type bmp)
-<img/enea.png>
- [20
+] [20
 
 ] [21
 
@@ -1370,10 +1372,10 @@ L3 programming layer <2026-03-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 27426 strings out of 402807
- 626974 string characters out of 5445134
- 1314559 words of memory out of 5000000
- 55891 multiletter control sequences out of 15000+600000
+ 27430 strings out of 402807
+ 627036 string characters out of 5445134
+ 1314579 words of memory out of 5000000
+ 55895 multiletter control sequences out of 15000+600000
  634439 words of font info for 120 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  103i,12n,111p,1003b,1057s stack positions out of 10000i,1000n,20000p,200000b,200000s
