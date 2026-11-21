@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.5) (preloaded format=xelatex 2026.11.14)  19 NOV 2026 21:19
+This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.5) (preloaded format=xelatex 2026.11.14)  21 NOV 2026 17:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -369,20 +369,15 @@ Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
 File: gloss-latex.ldf 2026/09/11 v2.13 polyglossia: module for default language
 
 ))
-(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/polyglossia\gloss-itali
-an.ldf
-File: gloss-italian.ldf 2026/09/11 v2.13 polyglossia: module for Italian
-
-(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/polyglossia\babelsh.def
-File: babelsh.def 2022/06/21 Babel common definitions for shorthands
- Taken verbatim from babel files (2022/06/06 v3.76)
-)
-Package babel Info: Making " an active character on input line 34.
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/polyglossia\gloss-engli
+sh.ldf
+File: gloss-english.ldf 2026/09/11 v2.13 polyglossia: module for English
 )
 
-Package polyglossia Info: Default language is italian
+Package polyglossia Info: Default language is english
 
- (C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+
+(C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
 
 (C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
@@ -1277,10 +1272,13 @@ Package microtype Info: Loading generic protrusion settings for font family
  [2
 
 ]
+Overfull \hbox (0.8617pt too wide) in paragraph at lines 90--91
+ [] 
+ []
+
 File: img/enea.png Graphic file (type bmp)
 <img/enea.png>
 LaTeX Font Info:    Calculating math sizes for size <8.9> on input line 101.
-
 (C:\Users\alica\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
@@ -1376,12 +1374,12 @@ L3 programming layer <2026-03-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 27456 strings out of 402807
- 627526 string characters out of 5445134
- 1314621 words of memory out of 5000000
- 55921 multiletter control sequences out of 15000+600000
- 634439 words of font info for 120 fonts, out of 8000000 for 9000
+ 27391 strings out of 402807
+ 627389 string characters out of 5445134
+ 1323168 words of memory out of 5000000
+ 55862 multiletter control sequences out of 15000+600000
+ 634415 words of font info for 117 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 103i,12n,111p,1003b,1057s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 103i,12n,111p,1003b,1056s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on main.pdf (24 pages).
